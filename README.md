@@ -1,70 +1,59 @@
 <div align="center">
 
-![Jithu turning and waving to a visitor inside a live pixel-art cyberpunk AI research lab](./assets/hero/jithu-ai-lab-welcome.webp)
+![Jithu in a stylized AI research workspace](./assets/hero/jithu-ai-lab-welcome.webp)
 
-![Jithu Vathiath Biju — AI engineer, researcher and builder](./assets/hero/system-header.svg)
+![Jithu Vathiath Biju - AI researcher and engineer](./assets/hero/system-header.svg)
 
-<sub><code>RESPONSIBLE AI</code> · <code>MACHINE LEARNING</code> · <code>FINANCIAL SYSTEMS</code> · <code>RESEARCH SOFTWARE</code></sub>
+<sub><code>RESPONSIBLE AI</code> · <code>MACHINE LEARNING</code> · <code>FINANCIAL TECHNOLOGY</code> · <code>RESEARCH SOFTWARE</code></sub>
 
 </div>
 
-<div style="font-family: 'Times New Roman', Times, serif;">
+<img align="right" width="340" alt="Animated portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-cyber-portrait-animated.webp" />
 
-```console
-jithu@neural-core:~$ whoami
-AI researcher and engineer building rigorous machine-learning systems,
-financial intelligence tools, data infrastructure and research software.
+## Professional Profile
 
-jithu@neural-core:~$ operating_principle
-Engineer with evidence. Validate with discipline. Communicate with clarity.
-```
+I am an AI researcher and engineer working across **Responsible AI, Machine Learning, Financial Technology and Research Software**. My work focuses on developing rigorous, transparent and reproducible systems that connect empirical research with practical engineering.
 
-<img align="right" width="340" alt="Animated cyber portrait of Jithu Vathiath Biju with a cyan scanning beam" src="./assets/portrait/jithu-cyber-portrait-animated.webp" />
+I am particularly interested in how AI systems support human decision-making, how their limitations can be measured and communicated, and how machine-learning systems can be evaluated responsibly in high-stakes settings.
 
-## Neural Profile
-
-I work at the intersection of **research, engineering and decision intelligence**, transforming complex questions into systems that can be tested, inspected and improved. My work combines disciplined experimentation with practical software engineering, from defining data boundaries and building models to evaluating uncertainty and documenting reproducible evidence.
-
-My current focus spans:
+My current areas of focus include:
 
 - **Responsible AI:** Human oversight, appropriate reliance, fairness, explainability and AI assurance.
-- **Machine Learning:** Temporal validation, calibration, model comparison, selective prediction and uncertainty estimation.
-- **Financial Technology:** Credit risk, market microstructure, settlement data and intelligent decision support.
-- **Software Systems:** Search, simulation, data pipelines, interactive research interfaces and reproducible tooling.
-
-Across these areas, I focus on one principle: advanced systems should remain **transparent, testable and useful in real decision environments**.
+- **Machine Learning:** Model evaluation, temporal validation, calibration, uncertainty estimation and selective prediction.
+- **Financial Technology:** Credit risk, market microstructure, financial data systems and decision support.
+- **Research Software:** Reproducible pipelines, simulation, search systems, interactive research tools and data engineering.
 
 <br clear="right" />
 
-![Cyberpunk signal divider](./assets/dividers/signal-divider.svg)
+![Section divider](./assets/dividers/signal-divider.svg)
 
-## Research Node // Human ↔ AI
+## Research Focus: Human-AI Collaboration
 
-[![Human-AI Decision Intelligence research summary](./assets/research/human-ai-decision-intelligence.svg)](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis)
+[![Human-AI collaboration research summary](./assets/research/human-ai-decision-intelligence.svg)](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis)
 
-My Warwick research investigated how people interpret, resist and revise algorithmic recommendations during lending decisions. The study followed a three-stage decision process: an independent human judgement, an AI recommendation, and a final human decision. Quantitative decision-flow analysis was combined with qualitative evidence to examine reliance, accuracy, fairness and human oversight.
+My Warwick research examined how people interpret, resist and revise algorithmic recommendations during lending decisions. The study used a three-stage decision process consisting of an independent human judgement, an AI recommendation and a final human decision. Quantitative decision analysis was combined with qualitative evidence to study reliance, accuracy, fairness and human oversight.
 
-The public repository deliberately separates empirical evidence from broader deployment claims. Findings are reported within the boundaries of the experimental sample, predictive explanations are distinguished from causal explanations, and descriptive group differences are not presented as legal fairness determinations.
+The public repository distinguishes empirical findings from broader deployment claims. Results are reported within the boundaries of the experimental sample, predictive explanations are separated from causal interpretations, and descriptive group differences are not presented as legal fairness determinations.
 
-**Research Signals:** 22 participants · 2,200 decision rows · 700 initial human-AI disagreements · 60% appropriately resolved disagreements · 66.61% final human-AI accuracy.
+**Study Overview:** 22 participants · 2,200 decision rows · 700 initial human-AI disagreements · 60% appropriately resolved disagreements · 66.61% final human-AI accuracy.
 
-[Explore The Research Repository →](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis)
+[Explore the Research Repository →](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis)
 
-![Cyberpunk signal divider](./assets/dividers/signal-divider.svg)
+![Section divider](./assets/dividers/signal-divider.svg)
 
-## Technical Arsenal
+## Technical Expertise
 
-![Technology stack evidenced by public repositories](./assets/stack/tech-arsenal.svg)
+![Technical skills demonstrated across public repositories](./assets/stack/tech-arsenal.svg)
 
-This stack reflects technologies demonstrated across my public research, data, AI and systems repositories rather than a generic list of tools.
+The technologies shown above are drawn from public projects and research repositories where they are used in implemented, documented and testable work.
 
-![Cyberpunk signal divider](./assets/dividers/signal-divider.svg)
+![Section divider](./assets/dividers/signal-divider.svg)
 
-## Project Command Center
+## Selected Projects
 
-![Six flagship projects across AI research, financial systems, governance, data engineering and search](./assets/projects/mission-grid.svg)
+![Selected research and engineering projects](./assets/projects/mission-grid.svg)
 
-### Flagship Systems
+### Featured Work
 
 1. **[Human-AI Loan Collaboration Analysis](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis)**  
    Mixed-methods Responsible AI research examining reliance, accuracy, group outcomes and human oversight in AI-assisted lending decisions. `Python` `Jupyter` `CatBoost` `SHAP`
@@ -76,7 +65,7 @@ This stack reflects technologies demonstrated across my public research, data, A
    A deterministic browser-based laboratory for exchange design, heterogeneous trading agents, latency, crisis replay and paired policy experiments. `Rust` `WebAssembly` `TypeScript` `React`
 
 4. **[AI Assurance Case Stress Lab](https://github.com/JithuVathiath/ai-assurance-case-stress-lab)**  
-   Policy-as-code infrastructure that connects assurance claims to evidence, stress-tests approvals under governance shocks, discovers minimal cut sets and records tamper-evident decisions. `TypeScript` `Node.js` `SARIF` `SHA-256`
+   Policy-as-code infrastructure that connects assurance claims to evidence, stress-tests approvals under governance shocks, identifies minimal cut sets and records tamper-evident decisions. `TypeScript` `Node.js` `SARIF` `SHA-256`
 
 5. **[SQL Market Settlement Forensics](https://github.com/JithuVathiath/sql-market-settlement-forensics)**  
    Audit-ready ingestion and warehouse analytics for SEC fails-to-deliver data, with lineage tracking, data-quality contracts and measured access-path experiments. `PostgreSQL` `SQL` `Go` `Docker`
@@ -85,10 +74,10 @@ This stack reflects technologies demonstrated across my public research, data, A
    A dependency-free C++20 retrieval engine featuring compressed positional indexes, BM25 ranking, phrase, prefix and fuzzy search, persistence and reproducible benchmarks. `C++20` `BM25` `BK-tree` `LRU`
 
 <details>
-<summary><strong>Additional Research Systems</strong></summary>
+<summary><strong>Additional Projects and Research</strong></summary>
 <br />
 
-- **[Supply Network Resilience Lab](https://github.com/JithuVathiath/supply-network-resilience-lab)** - Swift 6 network-flow and correlated Monte Carlo laboratory for CVaR, N-2 criticality and resilience-investment search.
+- **[Supply Network Resilience Lab](https://github.com/JithuVathiath/supply-network-resilience-lab)** - Swift 6 network-flow and correlated Monte Carlo laboratory for CVaR, N-2 criticality and resilience-investment analysis.
 - **[Quantum-Enhanced Heart Disease Ensemble](https://github.com/JithuVathiath/quantum-heart-disease-ensemble)** - Leakage-safe classical and quantum benchmarking that reports empirical results without overstating quantum advantage.
 - **[Parallel Plant Disease Deep Learning](https://github.com/JithuVathiath/parallel-plant-disease-deep-learning)** - ResNet-18 benchmark with leakage auditing, calibration, selective prediction and measured parallel scaling.
 - **[Aegis Continuous AI Assurance](https://github.com/JithuVathiath/ai-governance-continuous-assurance)** - Evidence-led controls, control-drift replay, SARIF output and a tamper-evident audit ledger.
@@ -97,20 +86,20 @@ This stack reflects technologies demonstrated across my public research, data, A
 
 </details>
 
-![Cyberpunk signal divider](./assets/dividers/signal-divider.svg)
+![Section divider](./assets/dividers/signal-divider.svg)
 
-## Active Missions
+## Current Research and Development
 
-| Signal | Mission | Operating Mode |
+| Status | Area | Approach |
 |:--|:--|:--|
-| `ACTIVE` | Responsible AI assurance, human oversight and decision intelligence | Evidence before confidence |
-| `ACTIVE` | Financial ML, market infrastructure and risk systems | Temporal and stress-tested |
-| `BUILDING` | Interactive research software and reproducible data products | Testable end to end |
-| `EXPLORING` | RAG / LLM evaluation, provenance and retrieval quality | Claims connected to evidence |
+| `ACTIVE` | Responsible AI, human oversight and decision intelligence | Evidence-led evaluation |
+| `ACTIVE` | Financial ML, market infrastructure and risk systems | Temporal validation and stress testing |
+| `BUILDING` | Interactive research software and reproducible data products | End-to-end testability |
+| `EXPLORING` | RAG and LLM evaluation, provenance and retrieval quality | Traceable evidence and systematic evaluation |
 
-Repository history, released experiments and documented results serve as the progress record.
+Repository history, released experiments and documented results provide the record of ongoing work.
 
-## System History
+## Education
 
 ```text
 SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
@@ -122,29 +111,29 @@ WARWICK BUSINESS SCHOOL
    └─ Research: Human-AI Collaboration · Responsible AI · Lending Decisions
 ```
 
-## Selected Signals
+## Research and Professional Highlights
 
 - Co-authored **“Prediction of Cardiac Disease Using Quantum Enhanced Ensemble Learning Approach”**, published at IEEE ICITIIT 2025 - [DOI 10.1109/ICITIIT64777.2025.11041018](https://doi.org/10.1109/ICITIIT64777.2025.11041018).
-- Built public repositories that document model limitations, data boundaries and reproducibility alongside reported results.
-- Developed work across notebook-based research, compiled systems, browser laboratories, policy-as-code, SQL warehouses and tested command-line tooling.
+- Developed public repositories that document model limitations, data boundaries, evaluation methods and reproducibility alongside reported results.
+- Built projects spanning empirical AI research, compiled systems, interactive laboratories, policy-as-code, SQL data platforms and tested command-line software.
 
-![Cyberpunk signal divider](./assets/dividers/signal-divider.svg)
+![Section divider](./assets/dividers/signal-divider.svg)
 
-## GitHub Telemetry
+## GitHub Activity
 
-![Verified public GitHub telemetry](./assets/telemetry/system-telemetry.svg)
+![Public GitHub repository statistics](./assets/telemetry/system-telemetry.svg)
 
-Telemetry is generated from the public GitHub API through a scheduled repository workflow, avoiding third-party streak services, view counters and external statistics endpoints.
+Repository statistics are generated from the public GitHub API through a scheduled workflow, without relying on third-party streak services or external statistics providers.
 
-[![Abstract animated contribution data stream](./assets/telemetry/contribution-stream.svg)](https://github.com/JithuVathiath?tab=repositories)
+[![Public development activity visualization](./assets/telemetry/contribution-stream.svg)](https://github.com/JithuVathiath?tab=repositories)
 
-The animation above represents a visual signal path rather than a fabricated contribution graph. GitHub's native contribution history remains the source of record.
+The visualization above represents the development workflow across source code, testing, evidence, review and release. GitHub's native contribution history remains the primary record of contribution activity.
 
-![Cyberpunk signal divider](./assets/dividers/signal-divider.svg)
+![Section divider](./assets/dividers/signal-divider.svg)
 
-## Establish Uplink
+## Contact and Links
 
-<img align="right" width="150" alt="Pixel-art avatar of Jithu Vathiath Biju" src="./assets/portrait/jithu-pixel-avatar.webp" />
+<img align="right" width="150" alt="Portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-pixel-avatar.webp" />
 
 - **GitHub:** [github.com/JithuVathiath](https://github.com/JithuVathiath)
 - **Repositories:** [Explore All Public Work](https://github.com/JithuVathiath?tab=repositories)
@@ -155,10 +144,8 @@ The animation above represents a visual signal path rather than a fabricated con
 
 <div align="center">
 
-![End of transmission — Build, question, iterate](./assets/footer/transmission.svg)
+![Jithu Vathiath Biju research and engineering portfolio](./assets/footer/transmission.svg)
 
-<sub>Original profile artwork and interface system created for Jithu Vathiath Biju.</sub>
-
-</div>
+<sub>Research, engineering and portfolio work by Jithu Vathiath Biju.</sub>
 
 </div>
