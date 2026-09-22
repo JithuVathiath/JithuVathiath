@@ -29,7 +29,29 @@ def _save(frames: list[Image.Image], path: Path, duration: int, quality: int) ->
 def build_hero() -> None:
     source = Image.open(ROOT / "assets/hero/jithu-ai-lab.webp").convert("RGB")
     source = source.resize((1280, 853), Image.Resampling.LANCZOS)
+    head_mid = Image.open(ROOT / "assets/hero/jithu-ai-lab-headturn-mid.png").convert("RGB")
+    head_mid = head_mid.resize(source.size, Image.Resampling.LANCZOS)
+    head_full = Image.open(ROOT / "assets/hero/jithu-ai-lab-headturn-full.png").convert("RGB")
+    head_full = head_full.resize(source.size, Image.Resampling.LANCZOS)
     frames: list[Image.Image] = []
+
+    head_mask = Image.new("L", source.size)
+    ImageDraw.Draw(head_mask).polygon(
+        ((592, 247), (755, 238), (829, 278), (866, 367), (852, 458), (793, 515), (652, 503), (587, 409)),
+        fill=255,
+    )
+    head_mask = head_mask.filter(ImageFilter.GaussianBlur(radius=11))
+
+    def pose_frame(index: int) -> Image.Image:
+        """Swap crisp pixel-art poses only inside the head/neck region."""
+
+        if 35 <= index < 39 or 61 <= index < 65:
+            pose = head_mid
+        elif 39 <= index < 61:
+            pose = head_full
+        else:
+            return source.convert("RGBA")
+        return Image.composite(pose, source, head_mask).convert("RGBA")
 
     neural_nodes = (
         (178, 322),
@@ -78,9 +100,9 @@ def build_hero() -> None:
         (1252, 171),
     )
 
-    for index in range(60):
-        phase = index / 60
-        frame = source.convert("RGBA")
+    for index in range(90):
+        phase = index / 90
+        frame = pose_frame(index)
         bloom = Image.new("RGBA", frame.size)
         bloom_draw = ImageDraw.Draw(bloom)
         detail = Image.new("RGBA", frame.size)
@@ -201,7 +223,7 @@ def build_hero() -> None:
         frame = Image.alpha_composite(frame, detail)
         frames.append(frame.convert("RGB"))
 
-    _save(frames, ROOT / "assets/hero/jithu-ai-lab-live.webp", 100, 82)
+    _save(frames, ROOT / "assets/hero/jithu-ai-lab-aware.webp", 100, 82)
 
 
 def build_portrait() -> None:

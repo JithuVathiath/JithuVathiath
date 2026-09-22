@@ -19,10 +19,12 @@ Edit the `Establish uplink` section in `README.md`. Verify every destination bef
 Source artwork lives in:
 
 - `assets/hero/jithu-ai-lab.png`
+- `assets/hero/jithu-ai-lab-headturn-mid.png`
+- `assets/hero/jithu-ai-lab-headturn-full.png`
 - `assets/portrait/jithu-cyber-portrait.png`
 - `assets/portrait/jithu-pixel-avatar.png`
 
-Optimized static WebP files sit beside them. Run `python scripts/build_animations.py` after replacing the optimized hero or portrait WebP. Keep the source portrait private outside this repository; only the stylized outputs belong here.
+The hero animation composites the two head-turn keyframes over the stable lab scene, then adds the live monitor, lighting and environmental effects. Optimized static WebP files sit beside the sources. Run `python scripts/build_animations.py` after replacing the optimized hero, its keyframes or the portrait WebP. Keep the source portrait private outside this repository; only the stylized outputs belong here.
 
 ## Update research evidence
 
