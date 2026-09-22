@@ -1,0 +1,27 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "29 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate dark cyberpunk contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: >-
+            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#00F5FF&color_dots=#050816,#0B3B5A,#008CFF,#8B5CF6,#FF2E88
+      - name: Publish generated asset
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          build_dir: dist
+          branch: output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

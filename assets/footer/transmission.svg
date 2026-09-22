@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-label="End of transmission. Build, question, iterate. System online.">
+  <defs><linearGradient id="g"><stop stop-color="#00F5FF"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#FF2E88"/></linearGradient><style>text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.p{animation:p 2s ease-in-out infinite}@keyframes p{50%{opacity:.25}}@media(prefers-reduced-motion:reduce){.p{animation:none}}</style></defs>
+  <rect width="1200" height="110" rx="16" fill="#050816"/><path d="M30 26H1170M30 84H1170" stroke="url(#g)" opacity=".55"/>
+  <text x="48" y="62" fill="#F4F7FF" font-size="16" letter-spacing="3">END OF TRANSMISSION // JVB</text><text x="430" y="62" fill="#8FA8D8" font-size="14" letter-spacing="2">BUILD · QUESTION · ITERATE</text><circle class="p" cx="1128" cy="55" r="6" fill="#39FF14"/><text x="970" y="61" fill="#77FF62" font-size="13">SYSTEM ONLINE</text>
+</svg>
