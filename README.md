@@ -1,6 +1,6 @@
 <div align="center">
 
-![Jithu working inside an original pixel-art cyberpunk AI research lab](./assets/hero/jithu-ai-lab-animated.webp)
+![Jithu working inside a live pixel-art cyberpunk AI research lab](./assets/hero/jithu-ai-lab-live.webp)
 
 ![Jithu Vathiath Biju — AI engineer, researcher and builder](./assets/hero/system-header.svg)
 
