@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="554" height="576" viewBox="0 0 554.4 576.2" role="img" aria-labelledby="title desc">
+<title id="title">Animated monochrome ASCII portrait of Jithu Vathiath Biju</title>
+<desc id="desc">A transparent black-and-white portrait constructed from ASCII characters with subtle flicker and horizontal glitch animation.</desc>
+<defs>
+  <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="0.35" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <clipPath id="band1"><rect x="0" y="167.1" width="554.4" height="28"/></clipPath>
+  <clipPath id="band2"><rect x="0" y="311.1" width="554.4" height="22"/></clipPath>
+  <clipPath id="band3"><rect x="0" y="443.7" width="554.4" height="18"/></clipPath>
+  <style>
+    .portrait{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-size:8.2px;font-weight:700;fill:#fff;white-space:pre;filter:url(#softGlow)}
+    .base{animation:flicker 4.8s ease-in-out infinite}
+    .g1{opacity:0;animation:glitch1 5.6s steps(1,end) infinite}
+    .g2{opacity:0;animation:glitch2 7.2s steps(1,end) infinite}
+    .g3{opacity:0;animation:glitch3 6.4s steps(1,end) infinite}
+    @keyframes flicker{0%,18%,22%,64%,68%,100%{opacity:.98}20%{opacity:.91}66%{opacity:.94}}
+    @keyframes glitch1{0%,35%,38%,100%{opacity:0;transform:translateX(0)}36%{opacity:.78;transform:translateX(5px)}37%{opacity:.45;transform:translateX(-3px)}}
+    @keyframes glitch2{0%,58%,61%,100%{opacity:0;transform:translateX(0)}59%{opacity:.62;transform:translateX(-6px)}60%{opacity:.38;transform:translateX(3px)}}
+    @keyframes glitch3{0%,79%,82%,100%{opacity:0;transform:translateX(0)}80%{opacity:.55;transform:translateX(4px)}81%{opacity:.35;transform:translateX(-2px)}}
+    @media(prefers-reduced-motion:reduce){.base,.g1,.g2,.g3{animation:none}.g1,.g2,.g3{display:none}}
+  </style>
+</defs>
+<g id="asciiPortrait" class="portrait" xml:space="preserve">
+<tspan x="0" y="8.6">&#160;</tspan>
+<tspan x="0" y="17.2">&#160;</tspan>
+<tspan x="0" y="25.8">&#160;</tspan>
+<tspan x="0" y="34.4">&#160;</tspan>
+<tspan x="0" y="43.0">                                             .;irssA52Ar:,. ::.</tspan>
+<tspan x="0" y="51.6">                                        ,:;23AssirsrsA3hMM32sr:,,;:::..sr</tspan>
+<tspan x="0" y="60.2">                                     .iAAXsXXAXX23hX;  .;XhGGHMhh5A533X25Xs</tspan>
+<tspan x="0" y="68.8">                                  .iXAXr,:isXsi,.,Xs:,..;sAXrsXA553332223Ahri.</tspan>
+<tspan x="0" y="77.4">                                 :XAs;,,;XXXXr;;;;.,.  ;ri:,;X25352AX:;5223;r5:</tspan>
+<tspan x="0" y="86.0">                               ;sAs;;:;;:,:rii:,;rA332r:  .,;i;iXs;riXMG2ri.,3A:.</tspan>
+<tspan x="0" y="94.6">                            ,r25Xi::::,.,;XXsissrsAAHM2s;,   .:;r3h5rsA2AXs;ssX5As</tspan>
+<tspan x="0" y="103.2">                          .s252r,::...:i;ii,.:irrsrrA5hh2AX;. .:;;:.,isXrish2s232ri</tspan>
+<tspan x="0" y="111.8">                       .rAX5A;,5ri;r;::,.,,:;;...  .,;rs252X;..     .,:,,,:X5MhA,.r:</tspan>
+<tspan x="0" y="120.4">                      ,ishAi;:ri2Aii;::;sAsri;,..:;;i;:...,:,.        ...,,i2h3s,,r:</tspan>
+<tspan x="0" y="129.0">                      ;ri;,..,:.,sXA2Assi;i;,  ,;;:,....        .,..      ..;2A;,ii</tspan>
+<tspan x="0" y="137.6">                     ,i2,,Xii;:sr:::.. .;i,   :i,. ....,...,:rA53533As:.   ,isXr:;</tspan>
+<tspan x="0" y="146.2">                     ,:Ai ;55A2Xsris;irr;:.  :;.  .,;irXAA5hHGSSSSSSGHh5XXX rM5s:</tspan>
+<tspan x="0" y="154.8">                  ,;,;:;ir: , .:i;:;ii;;,    .   .:irr2MGSSSSSSSSGGGGGS#SSB3 rAi,</tspan>
+<tspan x="0" y="163.4">                 .rHh2X:,iA2Ai,.,;;i,:,.       .:rA3hhhMHGSSGGGGHHGSS#9BB9B@2 ;r .</tspan>
+<tspan x="0" y="172.0">                 .;irXXXXrri,::::;;:.        ,;r2MGSSSGHHHGGSGGS##9BB&amp;BB&amp;&amp;9GG5Ai</tspan>
+<tspan x="0" y="180.6">                  ,A;:,,    ... :,:, . . .  ,isAhHGSSSSGSS#999BBBBBBB99#M2;  5352Ar,</tspan>
+<tspan x="0" y="189.2">                  :;;s;sr:;ii;,.;:;.  .. ...,;;s2hGGGGS#9B&amp;&amp;BB&amp;BB9##ShAr;iX23H32A2H5</tspan>
+<tspan x="0" y="197.8">                 ,r33A .,;i;,.... ..,...    ..:X5hHGGSGMMh352A2525hM32ss2Ari;S5;::A:</tspan>
+<tspan x="0" y="206.4">                .:i5r s: :i;;i:;iii;,  ,:rs:.;sX5hHH3s.    ,;sAA2AXX52Xs32,;3#9s:.X:</tspan>
+<tspan x="0" y="215.0">                  .;XhA:..,:,,.:,.   ih999999SHh2AA: .rA25522Xri;A22MH5srsXM##BG:rX.</tspan>
+<tspan x="0" y="223.6">                  . ;XA;:,:,,:.   ;5G##SSSGhhS9BB9#G2sGGs5HA  .,s5XsMBBGHGS#9#S95s,</tspan>
+<tspan x="0" y="232.2">                   ;,,;;;,;;:  ;AH#99###SGG9G2sA2h9&amp;9G5; sXsirXhG5srhSB&amp;BSHG#SG9G</tspan>
+<tspan x="0" y="240.8">                   ...;:::  ,5S9BB9#SSS#9#SGS9Gs :s3S99h253hMGS#hAs2hG9B9B#3GSG#9i</tspan>
+<tspan x="0" y="249.4">                    .,;,,,..3&amp;BB###99B9SHM9B9SG9Ar532shSSS####GM53GSMMhHHhhMMHG#9i</tspan>
+<tspan x="0" y="258.0">                     ;ri:..;SBBBBB9SHh5X:.A5M#3MG293;;AhHGGSGGHMAAhAsi:sr.:A55M9H</tspan>
+<tspan x="0" y="266.6">                      ::A2:XBBB#SSGMhhX.,, ,5S9S9S2 :rA3HGS####SShs:  .i;sXi  39A.</tspan>
+<tspan x="0" y="275.2">                       .ir,M&amp;9SGGGSGMA:,;sXis3#GHM:irX5MHHS##SH5s:,:XrXAA53hr sh:</tspan>
+<tspan x="0" y="283.8">                         :s9B9SGHG##Gs,rX3HHH#h; ,irA5hHHGGSSGA  ,;;sA3HSGG#Gi,rs5</tspan>
+<tspan x="0" y="292.4">                         ,5&amp;B9#SGG#9#h;2hHS993..:;ss;;X53hGHHG2,.sMhh352r, iM5:;:9M: .</tspan>
+<tspan x="0" y="301.0">                       ,::h&amp;B9#SGS9BB#AMS#992 ;;,;si:;:;:;iXsMh: rhH32rirX2hH5ri H9hs</tspan>
+<tspan x="0" y="309.6">                     ,3XrrG&amp;9#SGHG#BBBhh99#5, :;i;:sXi:;i::X;sr:, :A55AMHHh3AAXr 3#5Ghs</tspan>
+<tspan x="0" y="318.2">                 . .XhM3  #&amp;9#GHHGS9BBGH9Gs AX  ,.ii:;i;iriirXs;isss;,;Xrii.,.r: A9As3GMs</tspan>
+<tspan x="0" y="326.8">                  shM5i23rAMh3553HG#9BSM5:  ,hhr.   .:..,;iiri;;rA;i:i::,..  r5: s#3s;sMHH5;</tspan>
+<tspan x="0" y="335.4">                r3hH5sr.iAAr;;is2hG##H2,  .: .3GhXr:,.    .,..,.   .     .  r2i; iSMr;is5hhM2r  .</tspan>
+<tspan x="0" y="344.0">              ;5hA;s35:.. s2rXssX5hH2 s3.  :;  AHHhXsi;,.,.     ....,,,:,  sA..  :MHs;;rsAXs5h3i</tspan>
+<tspan x="0" y="352.6">             Ah2i,,.:AXri;. :rsXXXsi   X2   ;i  ;5HHM3322AXsssrri;;iii;. ,rs .   ,2HX::;;rsssA5M5i,</tspan>
+<tspan x="0" y="361.2">           rhhXr;,.:rs25r .;:. .:rsXsri.As.  ii. .s23Hh2AAAXXXsssrii;,. :Xi .    ,XHX::;irXAhGG5h32s.</tspan>
+<tspan x="0" y="369.8">         ,5H35352AA2X2s  ;;, ..,.. .:irrii,.  ;;.  :s2GGMhMMhhMh5r;;,  .X: .   i;.sMA;;rX2hGGM52shA2h5r.</tspan>
+<tspan x="0" y="378.4">        r33XrirXXXrrAr .ii;:::,..,,,    r::;.   22..,r3SSSHhhM5Xi:,.  :X:...  is, rH5rs3MMM32XXXAsMis3h5X.</tspan>
+<tspan x="0" y="387.0">     .,25si;:,,,, :Xr ,;;;::::,::,,.  sh2Ar:,.. sX ,..;AGS3rrri;;:.  ir:r;.  :;,X;5HMhMM3AsrssrrsAXh,::ir:</tspan>
+<tspan x="0" y="395.6">     .rr;;::,,,, rX; ,;::,,,:;;:,,,:.s3AAXsXXsr;    ., ,AGShAXsXr;,;r,  .:, ,isA2XsAA2233h355AXsrXs23.:.</tspan>
+<tspan x="0" y="404.2">     . r;.,,,. ,sX, ,i;:,,,,,:;;ii:. :     .:isAs;   .,..sH#H35X;:::.      iX2As:      ,;rA23h335A2rhX ,.</tspan>
+<tspan x="0" y="412.8">       :, ..;.,Xs. :i::,,,,,,,,rsi.:r:.        ,rAs    ...;3GH5,         .sAr:              .;rXA532XM:,,..</tspan>
+<tspan x="0" y="421.4">         .,,.:si  :;:::,,,,,,:Xs:  3hXi:,  .,;:  ,XA.    ...X3r ....    :Xr,   .,.,.::, ....     .:rX5X,,.</tspan>
+<tspan x="0" y="430.0">         .,.;r: .;;::,,:,,,,;sX,  ;hhAr;:. .:iri, ;rX      . ;:.,,..   :Ai:, .;i:,,,si;;,,,,,,,,,:,..rXi.</tspan>
+<tspan x="0" y="438.6">        .,,:;, .;;,,,,,,,,,rsi.  ;2532r;:,. ,;sAX.:iA;    .  ,.....    Xri::.,Xs,,::srrsi,,,,,,,:isXXs;,.</tspan>
+<tspan x="0" y="447.2">       ..,.,, .;;:::,,,,,:sX;   rArA32ri;:,..,r53r.irA   A35 .,,.,    ;A;i;..rAi,,::AXrAXi;:,,:;;iXAX,.</tspan>
+<tspan x="0" y="455.8">           . ,:::::::,,,:XX;   rAi.i25Xr;;:,,,,Xh2;iiA.  iXr  ...,    srisi..AX:,,::AssAXii;:,::;rrri.</tspan>
+<tspan x="0" y="464.4">          ,,,s;,,,.,,,,,ss,   i2;..,X52si;,,,,,;5hsiiA,   .    ,:.    Xii2r.i5s,:,;;AXsAXi;::::,,;:.</tspan>
+<tspan x="0" y="473.0">           ,i.,iX,,,,.:rr  . ,Ai   .;A5Xi;::,,,.rMAriA,  ,:,   ::    .Xi;2s A2i,,,:i2ss22si;;;;:.,;</tspan>
+<tspan x="0" y="481.6">              ,,,,,,:;;;.rXs.;r:,,...iA2ri;;;:,.;h2riA,  .,,   ::    ,Xi;3si5r:,,,;;AssA2Asi;::,,</tspan>
+<tspan x="0" y="490.2">                 ...,,:s2A; .;,,,,,.  i5si;;i;:,;3AriA.  .,,         .Xii3X2Xi::,:;iAsrX222s;.</tspan>
+<tspan x="0" y="498.8">                 .. .r5A;..irirrrssXAXA5AXri;;;::AAr;X.  ,;:,.,:;,   .Xii235s;;;::;;sssA25h3r.</tspan>
+<tspan x="0" y="507.4">                  ..:sr;;::;;:;:;r;;irssA255AAsrisriiA   ,::;.,:::   .AiiX2AriirrsXX22222AXs:</tspan>
+<tspan x="0" y="516.0">                    .  .. . ..:,;s.,,,:iiiirrsXAA2rXiA   .,:,.:;;,    Xiss22A22AAXssrrirrsi.</tspan>
+<tspan x="0" y="524.6">                         r:   .    .,:,:;irssr;:;i;rrs   ,:,..,;i,    X;srririiiiiiriiii;;;</tspan>
+<tspan x="0" y="533.2">                         ..    .,:.,:;i.,,:irssrr:iisi  .:;;::;rs:.   Xr;.rXAAsri;:,,,.</tspan>
+<tspan x="0" y="541.8">                                .i ,,,,..,,;irrii:i;A: .,::;,.,;;.: . rs;;irrsr;:,.si.</tspan>
+<tspan x="0" y="550.4">                                      ,s,.,:irrrr:r:s                .is::,irsr:.  ,.</tspan>
+<tspan x="0" y="559.0">                                       ;. .,;rssr;r.                  ,s,:,;...</tspan>
+<tspan x="0" y="567.6">                                              .;i:                       ,:.</tspan>
+<tspan x="0" y="576.2">                                               ,,                        ...</tspan>
+</g>
+<use href="#asciiPortrait" class="base"/>
+<use href="#asciiPortrait" class="g1" clip-path="url(#band1)"/>
+<use href="#asciiPortrait" class="g2" clip-path="url(#band2)"/>
+<use href="#asciiPortrait" class="g3" clip-path="url(#band3)"/>
+</svg>
