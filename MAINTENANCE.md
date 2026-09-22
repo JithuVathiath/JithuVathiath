@@ -21,12 +21,11 @@ Source artwork lives in:
 - `assets/hero/jithu-ai-lab.png`
 - `assets/hero/jithu-ai-lab-headturn-mid.png`
 - `assets/hero/jithu-ai-lab-headturn-full.png`
-- `assets/hero/jithu-ai-lab-wave-left.png`
-- `assets/hero/jithu-ai-lab-wave-right.png`
+- `assets/hero/jithu-ai-lab-greeting-*.webp`
 - `assets/portrait/jithu-cyber-portrait.png`
 - `assets/portrait/jithu-pixel-avatar.png`
 
-The hero animation composites the head-turn and hand-wave keyframes over the stable lab scene, then adds the live monitor, lighting and environmental effects. Optimized static WebP files sit beside the sources. Run `python scripts/build_animations.py` after replacing the optimized hero, its keyframes or the portrait WebP. Keep the source portrait private outside this repository; only the stylized outputs belong here.
+The hero animation composites video-guided head-turn, shoulder, elbow and hand-wave keyframes over the stable lab scene, then adds the live monitor, lighting and environmental effects. Optimized static WebP files sit beside the sources. Run `python scripts/build_animations.py` after replacing the optimized hero, its keyframes or the portrait WebP. Keep the source portrait private outside this repository; only the stylized outputs belong here.
 
 ## Update research evidence
 
