@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="34" viewBox="0 0 1200 34" role="img" aria-label="Cyberpunk signal divider">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="34" viewBox="0 0 1200 34" role="img" aria-label="Section divider">
   <defs><linearGradient id="g"><stop stop-color="#00F5FF"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#FF2E88"/></linearGradient><style>.s{stroke-dasharray:8 16;animation:f 5s linear infinite}@keyframes f{to{stroke-dashoffset:-96}}@media(prefers-reduced-motion:reduce){.s{animation:none}}</style></defs>
   <path d="M0 17H470l20-12h220l20 12h470" fill="none" stroke="#17234A" stroke-width="2"/>
   <path class="s" d="M0 17H470l20-12h220l20 12h470" fill="none" stroke="url(#g)" stroke-width="2"/>
