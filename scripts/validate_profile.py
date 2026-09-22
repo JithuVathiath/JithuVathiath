@@ -37,7 +37,7 @@ def main() -> int:
             failures.append(f"invalid SVG {svg.relative_to(ROOT)}: {error}")
 
     expected = (
-        ROOT / "assets/hero/jithu-ai-lab-aware.webp",
+        ROOT / "assets/hero/jithu-ai-lab-welcome.webp",
         ROOT / "assets/portrait/jithu-cyber-portrait-animated.webp",
         ROOT / "assets/portrait/jithu-pixel-avatar.webp",
     )

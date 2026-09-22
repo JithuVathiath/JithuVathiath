@@ -33,6 +33,10 @@ def build_hero() -> None:
     head_mid = head_mid.resize(source.size, Image.Resampling.LANCZOS)
     head_full = Image.open(ROOT / "assets/hero/jithu-ai-lab-headturn-full.png").convert("RGB")
     head_full = head_full.resize(source.size, Image.Resampling.LANCZOS)
+    wave_left = Image.open(ROOT / "assets/hero/jithu-ai-lab-wave-left.png").convert("RGB")
+    wave_left = wave_left.resize(source.size, Image.Resampling.LANCZOS)
+    wave_right = Image.open(ROOT / "assets/hero/jithu-ai-lab-wave-right.png").convert("RGB")
+    wave_right = wave_right.resize(source.size, Image.Resampling.LANCZOS)
     frames: list[Image.Image] = []
 
     head_mask = Image.new("L", source.size)
@@ -42,16 +46,44 @@ def build_hero() -> None:
     )
     head_mask = head_mask.filter(ImageFilter.GaussianBlur(radius=11))
 
-    def pose_frame(index: int) -> Image.Image:
-        """Swap crisp pixel-art poses only inside the head/neck region."""
+    greeting_mask = Image.new("L", source.size)
+    ImageDraw.Draw(greeting_mask).polygon(
+        (
+            (468, 328),
+            (554, 328),
+            (612, 257),
+            (757, 235),
+            (832, 276),
+            (872, 369),
+            (864, 493),
+            (789, 546),
+            (650, 611),
+            (534, 620),
+            (478, 546),
+            (460, 425),
+        ),
+        fill=255,
+    )
+    greeting_mask = greeting_mask.filter(ImageFilter.GaussianBlur(radius=11))
 
-        if 35 <= index < 39 or 61 <= index < 65:
+    def pose_frame(index: int) -> Image.Image:
+        """Start with a fast visitor greeting, then return to the screens."""
+
+        if index in {1, 27}:
             pose = head_mid
-        elif 39 <= index < 61:
+            mask = head_mask
+        elif 2 <= index < 4 or 24 <= index < 27:
             pose = head_full
+            mask = head_mask
+        elif 4 <= index < 8 or 12 <= index < 16 or 20 <= index < 24:
+            pose = wave_left
+            mask = greeting_mask
+        elif 8 <= index < 12 or 16 <= index < 20:
+            pose = wave_right
+            mask = greeting_mask
         else:
             return source.convert("RGBA")
-        return Image.composite(pose, source, head_mask).convert("RGBA")
+        return Image.composite(pose, source, mask).convert("RGBA")
 
     neural_nodes = (
         (178, 322),
@@ -100,8 +132,9 @@ def build_hero() -> None:
         (1252, 171),
     )
 
-    for index in range(90):
-        phase = index / 90
+    for index in range(80):
+        phase = index / 80
+        is_waving = 4 <= index < 24
         frame = pose_frame(index)
         bloom = Image.new("RGBA", frame.size)
         bloom_draw = ImageDraw.Draw(bloom)
@@ -140,10 +173,13 @@ def build_hero() -> None:
             indent = (row % 4) * 8
             length = 28 + ((row * 17) % 74)
             colour = code_palette[row % len(code_palette)]
-            draw.rectangle((427 + indent, y, 427 + indent + length, y + 3), fill=colour)
-            if row % 3 == 0:
+            line_end = 427 + indent + length
+            if is_waving:
+                line_end = min(line_end, 474)
+            draw.rectangle((427 + indent, y, line_end, y + 3), fill=colour)
+            if row % 3 == 0 and not is_waving:
                 draw.rectangle((535, y, 555 + (row % 2) * 14, y + 3), fill=(105, 126, 205, 190))
-        if index % 12 < 7:
+        if index % 12 < 7 and not is_waving:
             cursor_y = 302 + ((8 * 15 - (index * 2)) % 150)
             bloom_draw.rectangle((568, cursor_y - 4, 576, cursor_y + 9), fill=(0, 245, 255, 145))
             draw.rectangle((568, cursor_y, 575, cursor_y + 6), fill=(223, 255, 255, 250))
@@ -223,7 +259,7 @@ def build_hero() -> None:
         frame = Image.alpha_composite(frame, detail)
         frames.append(frame.convert("RGB"))
 
-    _save(frames, ROOT / "assets/hero/jithu-ai-lab-aware.webp", 100, 82)
+    _save(frames, ROOT / "assets/hero/jithu-ai-lab-welcome.webp", 100, 82)
 
 
 def build_portrait() -> None:
