@@ -1,6 +1,6 @@
 <div align="center">
 
-![Jithu in a stylized AI research workspace](./assets/hero/jithu-ai-lab-welcome.webp)
+![Jithu turning to greet a visitor in a stylized AI research workspace](./assets/hero/jithu-ai-lab-natural-wave.webp)
 
 ![Jithu Vathiath Biju - AI researcher and engineer](./assets/hero/system-header.svg)
 
