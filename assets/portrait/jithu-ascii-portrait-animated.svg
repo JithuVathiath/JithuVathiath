@@ -19,7 +19,7 @@
     @media(prefers-reduced-motion:reduce){.base,.g1,.g2,.g3{animation:none}.g1,.g2,.g3{display:none}}
   </style>
 </defs>
-<g id="asciiPortrait" class="portrait" xml:space="preserve">
+<text id="asciiPortrait" class="portrait base" xml:space="preserve" fill="#111111" stroke="#f4f4f4" stroke-width="0.7" paint-order="stroke fill" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace" font-size="8.2" font-weight="700">
 <tspan x="0" y="8.6">&#160;</tspan>
 <tspan x="0" y="17.2">&#160;</tspan>
 <tspan x="0" y="25.8">&#160;</tspan>
@@ -87,8 +87,7 @@
 <tspan x="0" y="559.0">                                       ;. .,;rssr;r.                  ,s,:,;...</tspan>
 <tspan x="0" y="567.6">                                              .;i:                       ,:.</tspan>
 <tspan x="0" y="576.2">                                               ,,                        ...</tspan>
-</g>
-<use href="#asciiPortrait" class="base"/>
+</text>
 <use href="#asciiPortrait" class="g1" clip-path="url(#band1)"/>
 <use href="#asciiPortrait" class="g2" clip-path="url(#band2)"/>
 <use href="#asciiPortrait" class="g3" clip-path="url(#band3)"/>
