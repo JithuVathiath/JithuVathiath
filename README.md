@@ -8,7 +8,7 @@
 
 </div>
 
-<img align="right" width="340" alt="Animated portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-cyber-portrait-animated.webp" />
+<img align="right" width="340" alt="Animated monochrome ASCII portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-ascii-portrait-animated.svg" />
 
 ## Professional Profile
 
