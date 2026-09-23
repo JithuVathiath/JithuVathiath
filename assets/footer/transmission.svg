@@ -1,7 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-label="Jithu Vathiath Biju research and engineering portfolio.">
-  <defs><linearGradient id="g"><stop stop-color="#00F5FF"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#FF2E88"/></linearGradient><style>text{font-family:'Times New Roman',Times,serif}.p{animation:p 2s ease-in-out infinite}@keyframes p{50%{opacity:.25}}@media(prefers-reduced-motion:reduce){.p{animation:none}}</style></defs>
-  <rect width="1200" height="110" rx="16" fill="#050816"/><path d="M30 26H1170M30 84H1170" stroke="url(#g)" opacity=".55"/>
-  <text x="48" y="62" fill="#F4F7FF" font-size="16" letter-spacing="2">JITHU VATHIATH BIJU · RESEARCH &amp; ENGINEERING PORTFOLIO</text>
-  <text x="690" y="62" fill="#8FA8D8" font-size="14" letter-spacing="1">RESPONSIBLE AI · FINTECH · MACHINE LEARNING</text>
-  <circle class="p" cx="1128" cy="55" r="6" fill="#39FF14"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="116" viewBox="0 0 1200 116" role="img" aria-label="Jithu Vathiath Biju research and engineering portfolio.">
+  <defs><style>text{font-family:Georgia,'Times New Roman',serif}</style></defs>
+  <rect width="1200" height="116" rx="14" fill="#1D1714"/>
+  <rect x="10" y="10" width="1180" height="96" rx="9" fill="none" stroke="#7C756D"/>
+  <circle cx="57" cy="58" r="24" fill="#C46D48" opacity=".62"/>
+  <path d="M34 78c7-18 17-18 23 0 7-18 17-18 24 0" fill="none" stroke="#D8A25E" stroke-width="1.5"/>
+  <text x="105" y="53" fill="#F4EADB" font-size="17" letter-spacing="2">JITHU VATHIATH BIJU · RESEARCH &amp; ENGINEERING PORTFOLIO</text>
+  <text x="105" y="79" fill="#A89E8C" font-size="13" letter-spacing="1.4">RESPONSIBLE AI · FINTECH · MACHINE LEARNING</text>
+  <path d="M895 38h250M895 58h250M895 78h250" stroke="#5C5146"/>
+  <circle cx="1128" cy="58" r="5" fill="#85966D"/>
 </svg>

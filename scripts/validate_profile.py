@@ -37,9 +37,9 @@ def main() -> int:
             failures.append(f"invalid SVG {svg.relative_to(ROOT)}: {error}")
 
     expected = (
-        ROOT / "assets/hero/jithu-ai-lab-natural-wave.webp",
+        ROOT / "assets/hero/jithu-retro-studio-greeting.webp",
         ROOT / "assets/portrait/jithu-ascii-portrait-bw.png",
-        ROOT / "assets/portrait/jithu-pixel-avatar.webp",
+        ROOT / "assets/portrait/jithu-retro-avatar.webp",
     )
     for asset in expected:
         if not asset.exists() or asset.stat().st_size == 0:
