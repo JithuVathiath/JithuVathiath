@@ -16,9 +16,9 @@
 
 </div>
 
-<img align="right" width="340" alt="Black-and-white ASCII portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-ascii-portrait-bw.png" />
-
 ## Professional Profile
+
+<img align="right" width="340" alt="Black-and-white ASCII portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-ascii-portrait-bw.png" />
 
 I am an AI researcher and engineer working across **Responsible AI, Machine Learning, Financial Technology and Research Software**. My work focuses on developing rigorous, transparent and reproducible systems that connect empirical research with practical engineering.
 
