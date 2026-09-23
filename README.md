@@ -6,9 +6,13 @@
 
 <sub><code>RESPONSIBLE AI</code> · <code>MACHINE LEARNING</code> · <code>FINANCIAL TECHNOLOGY</code> · <code>RESEARCH SOFTWARE</code></sub>
 
+<br /><br />
+
+<img src="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=8B5CF6&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" alt="AI Researcher, Machine Learning Engineer, Responsible AI, FinTech and Research Software" />
+
 </div>
 
-<img align="right" width="340" alt="Animated monochrome ASCII portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-ascii-portrait-animated.svg" />
+<img align="right" width="340" alt="Portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-cyber-portrait.webp" />
 
 ## Professional Profile
 
