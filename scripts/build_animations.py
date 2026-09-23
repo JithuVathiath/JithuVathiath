@@ -57,19 +57,25 @@ def build_hero() -> None:
     greeting_mask = Image.new("L", source.size)
     ImageDraw.Draw(greeting_mask).polygon(
         (
-            (375, 183),
-            (746, 183),
-            (879, 275),
-            (925, 512),
-            (842, 846),
-            (575, 853),
-            (433, 750),
-            (383, 521),
-            (400, 300),
+            # Keep the transition outside the complete person-and-chair
+            # silhouette.  The previous boundary crossed the chair back and
+            # its wide feather blended two different chair states, creating a
+            # visible soft halo around the subject.
+            (365, 175),
+            (790, 175),
+            (990, 245),
+            (1082, 430),
+            (1082, 853),
+            (548, 853),
+            (410, 760),
+            (350, 530),
+            (375, 290),
         ),
         fill=255,
     )
-    greeting_mask = greeting_mask.filter(ImageFilter.GaussianBlur(radius=11))
+    # A minimal feather hides the mask edge without softening pixel-art
+    # details or producing a blurry band around the chair.
+    greeting_mask = greeting_mask.filter(ImageFilter.GaussianBlur(radius=2))
 
     def pose_frame(index: int) -> Image.Image:
         """Start with a fast visitor greeting, then return to the screens."""
