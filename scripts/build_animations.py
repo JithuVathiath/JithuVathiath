@@ -40,6 +40,8 @@ def build_hero() -> None:
     head_full = head_full.resize(source.size, Image.Resampling.LANCZOS)
     greeting_turn_1 = load_keyframe("jithu-ai-lab-greeting-turn-1.webp")
     greeting_turn_2 = load_keyframe("jithu-ai-lab-greeting-turn-2.webp")
+    greeting_return_sync_1 = load_keyframe("jithu-ai-lab-greeting-return-sync-1.webp")
+    greeting_return_sync_2 = load_keyframe("jithu-ai-lab-greeting-return-sync-2.webp")
     greeting_rise = load_keyframe("jithu-ai-lab-greeting-rise.webp")
     greeting_raise_1 = load_keyframe("jithu-ai-lab-greeting-raise-1.webp")
     greeting_raise_2 = load_keyframe("jithu-ai-lab-greeting-raise-2.webp")
@@ -80,13 +82,13 @@ def build_hero() -> None:
     def pose_frame(index: int) -> Image.Image:
         """Start with a fast visitor greeting, then return to the screens."""
 
-        if index in {1, 34}:
+        if index == 1:
             pose = head_mid
             mask = head_mask
-        elif index in {2, 33}:
+        elif index == 2:
             pose = head_full
             mask = head_mask
-        elif index in {3, 32}:
+        elif index == 3:
             pose = greeting_turn_1
             mask = greeting_mask
         elif index in {4, 31}:
@@ -100,6 +102,14 @@ def build_hero() -> None:
             mask = greeting_mask
         elif index in {7, 28}:
             pose = greeting_raise_2
+            mask = greeting_mask
+        elif index == 32:
+            # On the return, rotate the head, shoulders and torso together.
+            # This replaces the former head-only tail frames.
+            pose = greeting_return_sync_1
+            mask = greeting_mask
+        elif index == 33:
+            pose = greeting_return_sync_2
             mask = greeting_mask
         elif 8 <= index < 12 or 16 <= index < 20 or 24 <= index < 28:
             pose = greeting_wave_a
