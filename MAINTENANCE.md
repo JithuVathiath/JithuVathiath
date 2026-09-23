@@ -25,7 +25,7 @@ Source artwork lives in:
 - `assets/portrait/jithu-cyber-portrait.png`
 - `assets/portrait/jithu-pixel-avatar.png`
 
-The hero animation composites video-guided head-turn, shoulder, elbow and hand-wave keyframes over the stable lab scene, then adds the live monitor, lighting and environmental effects. Optimized static WebP files sit beside the sources. Run `python scripts/build_animations.py` after replacing the optimized hero, its keyframes or the portrait WebP. Keep the source portrait private outside this repository; only the stylized outputs belong here.
+The hero animation composites video-guided head-turn, shoulder, elbow and hand-wave keyframes over the stable lab scene, then adds the live monitor, lighting and environmental effects. Dedicated return keyframes keep the head, neck, shoulders and torso rotating back toward the monitors together. Optimized static WebP files sit beside the sources. Run `python scripts/build_animations.py` after replacing the optimized hero, its keyframes or the portrait WebP. Keep the source portrait private outside this repository; only the stylized outputs belong here.
 
 ## Update research evidence
 
