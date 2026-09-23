@@ -1,6 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="34" viewBox="0 0 1200 34" role="img" aria-label="Section divider">
-  <defs><linearGradient id="g"><stop stop-color="#00F5FF"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#FF2E88"/></linearGradient><style>.s{stroke-dasharray:8 16;animation:f 5s linear infinite}@keyframes f{to{stroke-dashoffset:-96}}@media(prefers-reduced-motion:reduce){.s{animation:none}}</style></defs>
-  <path d="M0 17H470l20-12h220l20 12h470" fill="none" stroke="#17234A" stroke-width="2"/>
-  <path class="s" d="M0 17H470l20-12h220l20 12h470" fill="none" stroke="url(#g)" stroke-width="2"/>
-  <circle cx="600" cy="5" r="4" fill="#00F5FF"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="40" viewBox="0 0 1200 40" role="img" aria-label="Section divider">
+  <defs>
+    <pattern id="w" width="44" height="22" patternUnits="userSpaceOnUse"><path d="M0 22c5-14 17-14 22 0 5-14 17-14 22 0" fill="none" stroke="#A89E8C" stroke-width="1.4"/></pattern>
+  </defs>
+  <path d="M0 20h438M762 20h438" stroke="#7C756D" opacity=".55"/>
+  <rect x="456" y="5" width="288" height="30" rx="15" fill="#2B241F" stroke="#5C5146"/>
+  <rect x="476" y="9" width="248" height="22" fill="url(#w)" opacity=".72"/>
+  <circle cx="600" cy="20" r="5" fill="#C46D48"/>
 </svg>

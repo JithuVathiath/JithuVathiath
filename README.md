@@ -1,6 +1,6 @@
 <div align="center">
 
-![Jithu turning to greet a visitor in a stylized AI research workspace](./assets/hero/jithu-ai-lab-natural-wave.webp)
+![Jithu turning to greet a visitor in a warm retro-Japanese research studio](./assets/hero/jithu-retro-studio-greeting.webp)
 
 ![Jithu Vathiath Biju - AI researcher and engineer](./assets/hero/system-header.svg)
 
@@ -9,9 +9,9 @@
 <br /><br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=E5E7EB&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" />
-  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=111111&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" />
-  <img src="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=111111&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" alt="AI Researcher, Machine Learning Engineer, Responsible AI, FinTech and Research Software" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=E7D7C2&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" />
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=4A352A&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" />
+  <img src="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=4A352A&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" alt="AI Researcher, Machine Learning Engineer, Responsible AI, FinTech and Research Software" />
 </picture>
 
 </div>
@@ -141,7 +141,7 @@ The visualization above represents the development workflow across source code, 
 
 ## Contact and Links
 
-<img align="right" width="150" alt="Portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-pixel-avatar.webp" />
+<img align="right" width="150" alt="Warm retro portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-retro-avatar.webp" />
 
 - **GitHub:** [github.com/JithuVathiath](https://github.com/JithuVathiath)
 - **Repositories:** [Explore All Public Work](https://github.com/JithuVathiath?tab=repositories)
