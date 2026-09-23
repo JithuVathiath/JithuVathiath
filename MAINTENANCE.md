@@ -22,10 +22,12 @@ Source artwork lives in:
 - `assets/hero/jithu-ai-lab-headturn-mid.png`
 - `assets/hero/jithu-ai-lab-headturn-full.png`
 - `assets/hero/jithu-ai-lab-greeting-*.webp`
+- `assets/portrait/jithu-ascii-source-monochrome.webp`
+- `assets/portrait/jithu-ascii-portrait-bw.png`
 - `assets/portrait/jithu-cyber-portrait.png`
 - `assets/portrait/jithu-pixel-avatar.png`
 
-The hero animation composites video-guided head-turn, shoulder, elbow and hand-wave keyframes over the stable lab scene, then adds the live monitor, lighting and environmental effects. Dedicated return keyframes keep the head, neck, shoulders and torso rotating back toward the monitors together. Optimized static WebP files sit beside the sources. Run `python scripts/build_animations.py` after replacing the optimized hero, its keyframes or the portrait WebP. Keep the source portrait private outside this repository; only the stylized outputs belong here.
+The hero animation composites video-guided head-turn, shoulder, elbow and hand-wave keyframes over the stable lab scene, then adds the live monitor, lighting and environmental effects. Dedicated return keyframes keep the head, neck, shoulders and torso rotating back toward the monitors together. Optimized static WebP files sit beside the sources. Run `python scripts/build_animations.py` after replacing the optimized hero or its keyframes. Run `python scripts/build_ascii_portrait.py` after replacing the monochrome ASCII source plate; this deterministically rebuilds the true-character portrait used in the README. Keep the original private photograph outside this repository; only stylized outputs belong here.
 
 ## Update research evidence
 
