@@ -16,7 +16,7 @@
 
 </div>
 
-<img align="right" width="340" alt="Portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-cyber-portrait-monochrome.webp" />
+<img align="right" width="340" alt="Black-and-white ASCII portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-ascii-portrait-bw.png" />
 
 ## Professional Profile
 

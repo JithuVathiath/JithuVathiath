@@ -38,7 +38,7 @@ def main() -> int:
 
     expected = (
         ROOT / "assets/hero/jithu-ai-lab-natural-wave.webp",
-        ROOT / "assets/portrait/jithu-cyber-portrait-animated.webp",
+        ROOT / "assets/portrait/jithu-ascii-portrait-bw.png",
         ROOT / "assets/portrait/jithu-pixel-avatar.webp",
     )
     for asset in expected:
