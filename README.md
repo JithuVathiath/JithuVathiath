@@ -8,7 +8,11 @@
 
 <br /><br />
 
-<img src="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=8B5CF6&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" alt="AI Researcher, Machine Learning Engineer, Responsible AI, FinTech and Research Software" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=E5E7EB&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" />
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=111111&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" />
+  <img src="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=111111&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" alt="AI Researcher, Machine Learning Engineer, Responsible AI, FinTech and Research Software" />
+</picture>
 
 </div>
 
