@@ -1,9 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="40" viewBox="0 0 1200 40" role="img" aria-label="Section divider">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="64" viewBox="0 0 1200 64" role="img" aria-label="Animated Japanese lantern section divider">
   <defs>
-    <pattern id="w" width="44" height="22" patternUnits="userSpaceOnUse"><path d="M0 22c5-14 17-14 22 0 5-14 17-14 22 0" fill="none" stroke="#A89E8C" stroke-width="1.4"/></pattern>
+    <pattern id="w" width="44" height="18" patternUnits="userSpaceOnUse"><path d="M0 18c5-12 17-12 22 0 5-12 17-12 22 0" fill="none" stroke="#A89E8C" stroke-width="1.2"/></pattern>
+    <filter id="glow" x="-120%" y="-80%" width="340%" height="260%"><feGaussianBlur stdDeviation="7"/></filter>
+    <style>.lanternGlow{animation:blink 3.8s ease-in-out infinite}@keyframes blink{0%,100%{opacity:.16}50%{opacity:.48}}@media(prefers-reduced-motion:reduce){.lanternGlow{animation:none}}</style>
   </defs>
-  <path d="M0 20h438M762 20h438" stroke="#7C756D" opacity=".55"/>
-  <rect x="456" y="5" width="288" height="30" rx="15" fill="#2B241F" stroke="#5C5146"/>
-  <rect x="476" y="9" width="248" height="22" fill="url(#w)" opacity=".72"/>
-  <circle cx="600" cy="20" r="5" fill="#C46D48"/>
+  <path d="M0 32h430M770 32h430" stroke="#7C756D" opacity=".5"/>
+  <rect x="72" y="23" width="348" height="18" fill="url(#w)" opacity=".34"/>
+  <rect x="780" y="23" width="348" height="18" fill="url(#w)" opacity=".34"/>
+  <path d="M430 32h110m120 0h110" stroke="#D8A25E" opacity=".72"/>
+  <g transform="translate(600 2)">
+    <ellipse class="lanternGlow" cx="0" cy="29" rx="42" ry="24" fill="#D8A25E" filter="url(#glow)"/>
+    <path d="M-16 7h32M-13 11h26" stroke="#A89E8C" stroke-width="2"/>
+    <path d="M-23 16q23-9 46 0v28q-23 9-46 0Z" fill="#9F4F3D" stroke="#D8A25E" stroke-width="1.5"/>
+    <path d="M-12 15v31M0 13v35M12 15v31" stroke="#E7B778" stroke-width="1" opacity=".7"/>
+    <path d="M-16 50h32M-11 54h22" stroke="#A89E8C" stroke-width="2"/>
+    <path d="M0 55v7m-5-3 5 3 5-3" fill="none" stroke="#C46D48" stroke-width="1.5"/>
+    <text x="0" y="36" text-anchor="middle" fill="#FFF3DD" font-family="Georgia,'Times New Roman',serif" font-size="11">灯</text>
+  </g>
 </svg>

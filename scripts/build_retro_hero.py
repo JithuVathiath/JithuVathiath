@@ -20,45 +20,16 @@ def load(name: str) -> Image.Image:
     return image.resize(SIZE, Image.Resampling.LANCZOS)
 
 
-def warm_flash(image: Image.Image, strength: float) -> Image.Image:
-    """Use a brief analog light blink to hide the pose cut without ghosting."""
-
-    amber = Image.new("RGB", image.size, (216, 166, 102))
-    return Image.blend(image, amber, strength)
-
-
-def transition(start: Image.Image, end: Image.Image) -> list[Image.Image]:
-    return (
-        warm_flash(start, 0.12),
-        warm_flash(start, 0.28),
-        warm_flash(end, 0.28),
-        warm_flash(end, 0.12),
-    )
-
-
 def build() -> None:
     resting = load("jithu-retro-studio.webp")
     wave_a = load("jithu-retro-studio-wave-a.webp")
     wave_b = load("jithu-retro-studio-wave-b.webp")
 
-    frames: list[Image.Image] = [resting, resting]
-    durations: list[int] = [220, 180]
-
-    greeting = transition(resting, wave_a)
-    frames.extend(greeting)
-    durations.extend([45] * len(greeting))
-
-    # A restrained wrist movement feels like a greeting, not a looping GIF.
-    for _ in range(3):
-        frames.extend((wave_a, wave_a, wave_b, wave_b))
-        durations.extend((95, 95, 95, 95))
-
-    returning = transition(wave_a, resting)
-    frames.extend(returning)
-    durations.extend([45] * len(returning))
-
-    frames.extend([resting] * 10)
-    durations.extend([220] * 10)
+    # Start the greeting as soon as the README loads. The two generated wave
+    # poses share the same room, chair and monitor layout, so direct cuts keep
+    # the subject crisp and avoid the yellow flash or cross-fade halo.
+    frames: list[Image.Image] = [resting, wave_a, wave_b, wave_a, wave_b, wave_a, resting]
+    durations: list[int] = [80, 330, 280, 280, 280, 380, 2700]
 
     frames[0].save(
         OUTPUT,

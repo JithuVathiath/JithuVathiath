@@ -12,7 +12,7 @@ Edit `assets/stack/tech-arsenal.svg` and the supporting sentence in `README.md`.
 
 ## Update contact links
 
-Edit the `Establish uplink` section in `README.md`. Verify every destination before committing. Omit email, LinkedIn or portfolio links until the owner has explicitly approved the public address.
+Edit the `Contact and Links` section in `README.md`. Verify every destination before committing. Omit email or portfolio links until the owner has explicitly approved the public address.
 
 ## Update the hero or portrait
 
@@ -30,7 +30,7 @@ Source artwork lives in:
 - `assets/portrait/jithu-cyber-portrait.png`
 - `assets/portrait/jithu-pixel-avatar.png`
 
-The active hero uses a warm retro-Japanese studio and two natural hand positions. Run `python scripts/build_retro_hero.py` after replacing those source frames. The older cyberpunk sources remain as archive material and can still be rebuilt with `python scripts/build_animations.py`, but they are not referenced by the README. Run `python scripts/apply_retro_palette.py` to restore the muted amber, terracotta, indigo and sage palette across the first-party SVG panels. Run `python scripts/build_ascii_portrait.py` after replacing the monochrome ASCII source plate; this deterministically rebuilds the true-character portrait used in the README. Keep the original private photograph outside this repository; only stylized outputs belong here.
+The active hero uses a warm retro-Japanese studio, a resting frame and two natural hand positions. The three monitors show the human-AI decision process, model evaluation and responsible-AI assurance. Run `python scripts/build_retro_hero.py` after replacing those source frames. The animation begins its greeting immediately, uses direct crisp cuts rather than a tinted flash, and rests before looping. The older cyberpunk sources remain as archive material and can still be rebuilt with `python scripts/build_animations.py`, but they are not referenced by the README. Run `python scripts/apply_retro_palette.py` to restore the muted amber, terracotta, indigo and sage palette across the first-party SVG panels. Run `python scripts/build_ascii_portrait.py` after replacing the monochrome ASCII source plate; this deterministically rebuilds the true-character portrait used in the README. Keep the original private photograph outside this repository; only stylized outputs belong here.
 
 ## Update research evidence
 
@@ -55,6 +55,8 @@ python scripts/update_telemetry.py
 - `telemetry.yml` updates the first-party telemetry card.
 - `snake.yml` generates an optional contribution snake on the `output` branch.
 - `validate.yml` checks local README targets, SVG parsing, forbidden placeholders and workflow YAML syntax.
+
+The checked-in contribution panel is a symbolic animated snake moving around a warm contribution grid. It illustrates workflow rather than contribution counts; GitHub's native activity remains authoritative.
 
 ## Final check
 

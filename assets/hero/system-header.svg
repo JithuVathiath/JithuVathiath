@@ -1,16 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
   <title id="title">Jithu Vathiath Biju research profile</title>
-  <desc id="desc">A warm retro-Japanese profile placard for Jithu Vathiath Biju, AI researcher and engineer.</desc>
+  <desc id="desc">A warm retro-Japanese profile placard with a JVB monogram crest for Jithu Vathiath Biju, AI researcher and engineer.</desc>
   <defs>
     <pattern id="waves" width="42" height="22" patternUnits="userSpaceOnUse">
       <path d="M0 22c5-13 16-13 21 0C26 9 37 9 42 22" fill="none" stroke="#A89E8C" stroke-width="1.4" opacity=".34"/>
     </pattern>
-    <style>text{font-family:Georgia,'Times New Roman',serif}.sun{animation:breathe 6s ease-in-out infinite}@keyframes breathe{50%{opacity:.62}}@media(prefers-reduced-motion:reduce){.sun{animation:none}}</style>
+    <filter id="crestGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+    <style>text{font-family:Georgia,'Times New Roman',serif}.crestGlow{animation:breathe 6s ease-in-out infinite}@keyframes breathe{50%{opacity:.3}}@media(prefers-reduced-motion:reduce){.crestGlow{animation:none}}</style>
   </defs>
   <rect width="1200" height="220" rx="16" fill="#1D1714"/>
   <rect x="10" y="10" width="1180" height="200" rx="10" fill="none" stroke="#7C756D"/>
   <rect x="22" y="22" width="1156" height="176" rx="7" fill="none" stroke="#4A3F35"/>
-  <circle class="sun" cx="103" cy="94" r="48" fill="#C46D48" opacity=".48"/>
+  <g transform="translate(103 94)">
+    <circle class="crestGlow" r="51" fill="#C46D48" opacity=".18" filter="url(#crestGlow)"/>
+    <circle r="46" fill="#2B241F" stroke="#D8A25E" stroke-width="2"/>
+    <circle r="39" fill="none" stroke="#7C756D" stroke-width="1" stroke-dasharray="2 5"/>
+    <path d="M0-31 27-21v20c0 20-12 31-27 38C-15 30-27 19-27-1v-20Z" fill="#493229" stroke="#D28B66" stroke-width="1.6"/>
+    <path d="M-20 13c8-9 13-9 20 0 7-9 12-9 20 0" fill="none" stroke="#D8A25E" stroke-width="2" opacity=".82"/>
+    <text x="0" y="4" fill="#FFF4E5" font-size="17" font-weight="700" text-anchor="middle" letter-spacing="1">JVB</text>
+    <circle cx="0" cy="-22" r="2.5" fill="#85966D"/>
+  </g>
   <path d="M40 154h126" stroke="#D8A25E" stroke-width="2" opacity=".75"/>
   <rect x="35" y="158" width="142" height="32" fill="url(#waves)"/>
   <text x="205" y="58" fill="#D8A25E" font-size="15" letter-spacing="3">RESEARCH PROFILE · ARTIFICIAL INTELLIGENCE &amp; FINANCIAL TECHNOLOGY</text>

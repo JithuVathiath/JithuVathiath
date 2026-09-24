@@ -1,10 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
-  <title id="title">Public development workflow</title><desc id="desc">An abstract animated path linking source code, testing, evidence, review and release. It does not encode contribution counts.</desc>
-  <defs><linearGradient id="g"><stop stop-color="#D8A25E"/><stop offset=".5" stop-color="#596C78"/><stop offset="1" stop-color="#C46D48"/></linearGradient><style>text{font-family:Georgia,'Times New Roman',serif}.path{stroke-dasharray:5 18;animation:f 7s linear infinite}.n{animation:p 5s ease-in-out infinite}.d1{animation-delay:1s}.d2{animation-delay:2s}.d3{animation-delay:3s}@keyframes f{to{stroke-dashoffset:-69}}@keyframes p{50%{opacity:.55}}@media(prefers-reduced-motion:reduce){.path,.n{animation:none}}</style></defs>
-  <rect width="1200" height="230" rx="18" fill="#1D1714"/><rect x="2" y="2" width="1196" height="226" rx="16" fill="none" stroke="#5C5146" stroke-width="2"/>
-  <text x="42" y="50" fill="#D8A25E" font-size="15" letter-spacing="3">PUBLIC DEVELOPMENT WORKFLOW</text>
-  <text x="42" y="78" fill="#7C756D" font-size="12">Source code, testing, evidence, review and release</text>
-  <path class="path" d="M60 151H210l70-48 90 76 95-54 100 26 90-70 105 98 90-44 90 16h200" fill="none" stroke="url(#g)" stroke-width="4"/>
-  <g fill="#D8A25E"><circle class="n" cx="210" cy="151" r="6"/><circle class="n d1" cx="370" cy="179" r="6" fill="#596C78"/><circle class="n d2" cx="565" cy="151" r="6" fill="#C46D48"/><circle class="n d3" cx="760" cy="179" r="6" fill="#85966D"/><circle class="n d1" cx="940" cy="151" r="6"/></g>
-  <g fill="#A89E8C" font-size="12"><text x="174" y="202">SOURCE</text><text x="337" y="202">TEST</text><text x="528" y="202">EVIDENCE</text><text x="720" y="202">REVIEW</text><text x="900" y="202">RELEASE</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Animated public development workflow snake</title>
+  <desc id="desc">A symbolic warm-coloured snake travels around a contribution-style grid connecting source code, testing, evidence, review and release. It does not encode contribution counts.</desc>
+  <defs>
+    <pattern id="grid" width="38" height="28" patternUnits="userSpaceOnUse">
+      <rect x="2" y="2" width="27" height="19" rx="4" fill="#493229" stroke="#6D4A39"/>
+      <rect x="6" y="6" width="19" height="11" rx="3" fill="#5B3D31" opacity=".72"/>
+    </pattern>
+    <linearGradient id="border"><stop stop-color="#D8A25E"/><stop offset=".52" stop-color="#85966D"/><stop offset="1" stop-color="#C46D48"/></linearGradient>
+    <path id="snakePath" d="M91 120H1109Q1132 120 1132 143V190Q1132 211 1111 211H89Q68 211 68 190V143Q68 120 91 120Z"/>
+    <style>text{font-family:Georgia,'Times New Roman',serif}.pulse{animation:p 4.8s ease-in-out infinite}@keyframes p{50%{opacity:.48}}@media(prefers-reduced-motion:reduce){.moving{display:none}.staticSnake{display:inline}}</style>
+  </defs>
+  <rect width="1200" height="260" rx="18" fill="#1D1714"/><rect x="2" y="2" width="1196" height="256" rx="16" fill="none" stroke="url(#border)" stroke-width="2"/>
+  <text x="42" y="46" fill="#E4AE68" font-size="15" letter-spacing="3">PUBLIC DEVELOPMENT WORKFLOW</text>
+  <text x="42" y="73" fill="#B9A995" font-size="12">A symbolic contribution trail · GitHub activity remains the authoritative record</text>
+  <rect x="68" y="94" width="1064" height="88" rx="14" fill="url(#grid)" stroke="#5C5146"/>
+  <path d="M91 120H1109Q1132 120 1132 143V190Q1132 211 1111 211H89Q68 211 68 190V143Q68 120 91 120Z" fill="none" stroke="#D8A25E" stroke-width="3" stroke-dasharray="2 12" opacity=".35"/>
+  <g class="moving">
+    <circle r="8" fill="#D8A25E"><animateMotion dur="7.5s" begin="-2.3s" repeatCount="indefinite"><mpath href="#snakePath" xlink:href="#snakePath"/></animateMotion></circle>
+    <circle r="8.5" fill="#D39A59"><animateMotion dur="7.5s" begin="-2.15s" repeatCount="indefinite"><mpath href="#snakePath" xlink:href="#snakePath"/></animateMotion></circle>
+    <circle r="9" fill="#C98550"><animateMotion dur="7.5s" begin="-2s" repeatCount="indefinite"><mpath href="#snakePath" xlink:href="#snakePath"/></animateMotion></circle>
+    <circle r="9.5" fill="#B97047"><animateMotion dur="7.5s" begin="-1.85s" repeatCount="indefinite"><mpath href="#snakePath" xlink:href="#snakePath"/></animateMotion></circle>
+    <circle r="10" fill="#A65E40"><animateMotion dur="7.5s" begin="-1.7s" repeatCount="indefinite"><mpath href="#snakePath" xlink:href="#snakePath"/></animateMotion></circle>
+    <g>
+      <path d="M-15-11H4Q17-11 17 0T4 11h-19q-7-11 0-22Z" fill="#914C39" stroke="#F1C27D" stroke-width="1.5"/>
+      <circle cx="7" cy="-4" r="2.1" fill="#FFF4E5"/><circle cx="7" cy="-4" r=".9" fill="#1D1714"/>
+      <path class="pulse" d="M16 2h10m0 0 5-4m-5 4 5 4" fill="none" stroke="#D58A68" stroke-width="1.5"/>
+      <animateMotion dur="7.5s" begin="-1.52s" repeatCount="indefinite" rotate="auto"><mpath href="#snakePath" xlink:href="#snakePath"/></animateMotion>
+    </g>
+  </g>
+  <g class="staticSnake" display="none" transform="translate(550 120)"><circle cx="-42" r="8" fill="#D8A25E"/><circle cx="-25" r="9" fill="#C98550"/><circle cx="-7" r="10" fill="#A65E40"/><path d="M5-11h18q13 0 13 11T23 11H5Q-2 0 5-11Z" fill="#914C39" stroke="#F1C27D"/><circle cx="26" cy="-4" r="2" fill="#FFF4E5"/></g>
+  <g fill="#D7C5AF" font-size="12" letter-spacing="1"><text x="90" y="236">SOURCE</text><text x="310" y="236">TEST</text><text x="520" y="236">EVIDENCE</text><text x="754" y="236">REVIEW</text><text x="986" y="236">RELEASE</text></g>
+  <g fill="#D8A25E" opacity=".8"><circle cx="70" cy="232" r="3"/><circle cx="290" cy="232" r="3"/><circle cx="500" cy="232" r="3"/><circle cx="734" cy="232" r="3"/><circle cx="966" cy="232" r="3"/></g>
 </svg>

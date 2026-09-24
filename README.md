@@ -1,8 +1,8 @@
 <div align="center">
 
-![Jithu turning to greet a visitor in a warm retro-Japanese research studio](./assets/hero/jithu-retro-studio-greeting.webp)
-
 ![Jithu Vathiath Biju - AI researcher and engineer](./assets/hero/system-header.svg)
+
+![Jithu turning to greet a visitor in a warm retro-Japanese research studio](./assets/hero/jithu-retro-studio-greeting.webp)
 
 <sub><code>RESPONSIBLE AI</code> · <code>MACHINE LEARNING</code> · <code>FINANCIAL TECHNOLOGY</code> · <code>RESEARCH SOFTWARE</code></sub>
 
@@ -144,6 +144,8 @@ The visualization above represents the development workflow across source code, 
 <img align="right" width="150" alt="Warm retro portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-retro-avatar.webp" />
 
 - **GitHub:** [github.com/JithuVathiath](https://github.com/JithuVathiath)
+- **LinkedIn:** [linkedin.com/in/jithu-v-biju](https://in.linkedin.com/in/jithu-v-biju)
+- **Instagram:** [@jithu_v_18](https://www.instagram.com/jithu_v_18/)
 - **Repositories:** [Explore All Public Work](https://github.com/JithuVathiath?tab=repositories)
 - **Research:** [Human-AI Lending Collaboration](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis)
 - **Publication:** [IEEE ICITIIT 2025 Paper](https://doi.org/10.1109/ICITIIT64777.2025.11041018)
