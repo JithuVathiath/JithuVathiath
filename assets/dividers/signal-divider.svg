@@ -3,14 +3,31 @@
     <pattern id="wave" width="44" height="18" patternUnits="userSpaceOnUse"><path d="M0 18c5-12 17-12 22 0 5-12 17-12 22 0" fill="none" stroke="#A89E8C" stroke-width="1.2"/></pattern>
     <linearGradient id="paper" x1="0" x2="1"><stop stop-color="#A93E2D"/><stop offset=".5" stop-color="#EE6538"/><stop offset="1" stop-color="#A93E2D"/></linearGradient>
     <filter id="softGlow" x="-130%" y="-80%" width="360%" height="260%"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="beamGlow" x="-80%" y="-500%" width="260%" height="1100%"><feGaussianBlur stdDeviation="4"/></filter>
   </defs>
   <path d="M0 44h430M770 44h430" stroke="#7C756D" opacity=".52"/>
   <rect x="70" y="35" width="350" height="18" fill="url(#wave)" opacity=".34"/>
   <rect x="780" y="35" width="350" height="18" fill="url(#wave)" opacity=".34"/>
   <path d="M430 44h118m104 0h118" stroke="#D8A25E" stroke-width="1.5" opacity=".76"/>
+  <g aria-hidden="true">
+    <line x1="-150" y1="44" x2="0" y2="44" stroke="#F4C873" stroke-width="8" stroke-linecap="round" opacity="0" filter="url(#beamGlow)">
+      <animate attributeName="x1" values="-150;1050" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;1200" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.42;.42;0" keyTimes="0;.05;.94;1" dur="6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="-110" y1="44" x2="0" y2="44" stroke="#FFE4A1" stroke-width="2" stroke-linecap="round" opacity="0">
+      <animate attributeName="x1" values="-110;1090" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;1200" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.05;.94;1" dur="6s" repeatCount="indefinite"/>
+    </line>
+    <circle cx="0" cy="44" r="4" fill="#FFF1BD" opacity="0">
+      <animate attributeName="cx" values="0;1200" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.04;.96;1" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
   <g transform="translate(600 2)">
     <ellipse cx="0" cy="42" rx="47" ry="34" fill="#FF9E42" filter="url(#softGlow)" opacity=".18">
-      <animate attributeName="opacity" values=".12;.55;.18;.48;.12" keyTimes="0;.28;.5;.72;1" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".10;.10;.18;.82;.58;.18;.10" keyTimes="0;.42;.47;.50;.55;.62;1" dur="6s" repeatCount="indefinite"/>
     </ellipse>
     <path d="M-21 2h42v8h-42zM-17 0h34v4h-34z" fill="#252220"/>
     <path d="M-28 13Q0 5 28 13v55Q0 77-28 68Z" fill="url(#paper)" stroke="#D8A25E" stroke-width="1.2"/>
@@ -21,7 +38,7 @@
     <g transform="translate(-2 49)"><circle cy="-5" r="3" fill="#211D1B"/><path d="M-5-1 0-4 5-1 3 11-3 11Z" fill="#742F2C"/><path d="M-3 2 0 5 3 2" fill="none" stroke="#D8A25E" stroke-width="1"/></g>
     <path d="M-25 61q8-7 16 0 8-7 16 0 8-7 16 0" fill="none" stroke="#F2D6A0" stroke-width="2"/>
     <path d="M-28 14Q0 6 28 14v54Q0 76-28 68Z" fill="#FFD879" opacity=".06">
-      <animate attributeName="opacity" values=".05;.5;.1;.42;.05" keyTimes="0;.28;.5;.72;1" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".05;.05;.12;.58;.42;.12;.05" keyTimes="0;.42;.47;.50;.55;.62;1" dur="6s" repeatCount="indefinite"/>
     </path>
     <path d="M-20 71h40v7h-40zM-15 78h30v4h-30z" fill="#252220"/>
     <path d="M0 82v6" stroke="#C46D48" stroke-width="1.5"/>
