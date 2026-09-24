@@ -18,7 +18,7 @@
 
 ## Professional Profile
 
-<img align="right" width="340" alt="Black-and-white ASCII portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-ascii-portrait-bw.png" />
+<img align="right" width="340" alt="Black-and-white ASCII portrait of Jithu Vathiath Biju revealing from top to bottom" src="./assets/portrait/jithu-ascii-portrait-reveal.webp" />
 
 I am an AI researcher and engineer working across **Responsible AI, Machine Learning, Financial Technology and Research Software**. My work focuses on developing rigorous, transparent and reproducible systems that connect empirical research with practical engineering.
 
@@ -133,9 +133,13 @@ WARWICK BUSINESS SCHOOL
 
 Repository statistics are generated from the public GitHub API through a scheduled workflow, without relying on third-party streak services or external statistics providers.
 
-[![Public development activity visualization](./assets/telemetry/contribution-stream.svg)](https://github.com/JithuVathiath?tab=repositories)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JithuVathiath/JithuVathiath/output/pacman-contribution-graph-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JithuVathiath/JithuVathiath/output/pacman-contribution-graph.svg" />
+  <img alt="Pac-Man animation playing through Jithu Vathiath Biju's GitHub contribution graph" src="https://raw.githubusercontent.com/JithuVathiath/JithuVathiath/output/pacman-contribution-graph.svg" />
+</picture>
 
-The visualization above represents the development workflow across source code, testing, evidence, review and release. GitHub's native contribution history remains the primary record of contribution activity.
+The Pac-Man visualization is regenerated from public contribution data every day. Contribution intensity determines the pellets and power pellets, while GitHub's native contribution history remains the primary activity record.
 
 ![Section divider](./assets/dividers/signal-divider.svg)
 
