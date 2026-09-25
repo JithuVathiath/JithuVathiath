@@ -3,9 +3,10 @@
 
 from __future__ import annotations
 
+import math
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,79 +35,45 @@ def load(name: str) -> Image.Image:
     return image.resize(SIZE, Image.Resampling.LANCZOS)
 
 
-def atomic_breath(progress: float, phase: float = 0.0) -> Image.Image:
-    """Render one smooth atomic-breath state over the unchanged window crop."""
+def flying_birds(phase: float) -> Image.Image:
+    """Render a small, naturally staggered flock crossing the city sky."""
 
     scale = 4
-    width, height = 232 * scale, 259 * scale
-    breath = Image.new("RGBA", (width, height), (0, 0, 0, 0))
-    if progress <= 0:
-        return breath
-
-    # Begin inside the jaw so even the shortest ignition state stays connected
-    # to the existing mouth glow instead of reading as a detached white dot.
-    mouth_x, mouth_y = 87 * scale, 53 * scale
-    length = max(9, round(126 * progress)) * scale
-    end_x = min(width - 4 * scale, mouth_x + length)
-    steps = max(12, round((end_x - mouth_x) / (3 * scale)))
-    points: list[tuple[float, float]] = []
-    for index in range(steps + 1):
-        t = index / steps
-        x = mouth_x + (end_x - mouth_x) * t
-        y = mouth_y + (1.35 * scale * (1 - t)) * __import__("math").sin(t * 9 + phase)
-        points.append((x, y))
-
-    def ribbon(half_width: float) -> list[tuple[float, float]]:
-        upper: list[tuple[float, float]] = []
-        lower: list[tuple[float, float]] = []
-        for index, (x, y) in enumerate(points):
-            t = index / steps
-            taper = max(0.10, (1 - t) ** 0.42)
-            flare = 0.45 + 0.55 * min(1.0, t * 4)
-            radius = half_width * scale * taper * flare
-            upper.append((x, y - radius))
-            lower.append((x, y + radius))
-        return upper + list(reversed(lower))
-
-    glow = Image.new("RGBA", breath.size, (0, 0, 0, 0))
-    glow_draw = ImageDraw.Draw(glow)
-    glow_draw.polygon(ribbon(9.5), fill=(58, 192, 255, 150))
-    glow_draw.ellipse(
-        (mouth_x - 8 * scale, mouth_y - 8 * scale, mouth_x + 14 * scale, mouth_y + 8 * scale),
-        fill=(75, 205, 255, 170),
+    canvas = Image.new("RGBA", (232 * scale, 259 * scale), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(canvas)
+    flock = (
+        (0.00, 35, 1.00, 0.0),
+        (0.17, 51, 0.82, 1.1),
+        (0.38, 27, 0.70, 2.4),
+        (0.60, 63, 0.88, 3.2),
+        (0.81, 43, 0.62, 4.5),
     )
-    glow = glow.filter(ImageFilter.GaussianBlur(5.5 * scale))
-    breath.alpha_composite(glow)
+    for offset, base_y, bird_scale, flap_offset in flock:
+        travel = (phase + offset) % 1.0
+        x = (-18 + travel * 268) * scale
+        y = (base_y + math.sin((phase * math.tau * 2) + flap_offset) * 2.2) * scale
+        wing = math.sin((phase * math.tau * 8) + flap_offset)
+        span = 7.0 * bird_scale * scale
+        lift = (2.0 + 2.6 * wing) * bird_scale * scale
+        body = 1.15 * bird_scale * scale
+        colour = (48, 45, 41, 220)
+        highlight = (112, 83, 60, 145)
 
-    stream = Image.new("RGBA", breath.size, (0, 0, 0, 0))
-    stream_draw = ImageDraw.Draw(stream)
-    stream_draw.polygon(ribbon(5.2), fill=(92, 213, 255, 205))
-    stream_draw.line(points, fill=(225, 249, 255, 245), width=round(2.4 * scale))
-    stream = stream.filter(ImageFilter.GaussianBlur(0.65 * scale))
-    breath.alpha_composite(stream)
+        # Two curved-looking strokes form a readable bird silhouette at the
+        # small README scale. Independent wing phases keep the flock organic.
+        draw.line((x - span, y - lift, x, y + body, x + span, y - lift), fill=colour, width=max(2, round(1.35 * bird_scale * scale)), joint="curve")
+        draw.line((x - span * .82, y - lift - scale * .35, x, y + body - scale * .25, x + span * .82, y - lift - scale * .35), fill=highlight, width=max(1, round(.45 * bird_scale * scale)), joint="curve")
 
-    detail = ImageDraw.Draw(breath)
-    for offset, alpha in ((-7, 125), (7, 100)):
-        wisp: list[tuple[float, float]] = []
-        for index, (x, y) in enumerate(points):
-            t = index / steps
-            if t < 0.18:
-                continue
-            wave = __import__("math").sin(t * 15 + phase + offset) * 1.8 * scale
-            wisp.append((x, y + offset * scale * (0.45 + 0.55 * t) + wave))
-        if len(wisp) > 1:
-            detail.line(wisp, fill=(119, 225, 255, alpha), width=scale)
-
-    return breath.resize((232, 259), Image.Resampling.LANCZOS)
+    return canvas.resize((232, 259), Image.Resampling.LANCZOS)
 
 
-def with_godzilla_window(image: Image.Image, progress: float, phase: float = 0.0) -> Image.Image:
-    """Composite only the two outdoor window panes onto an existing frame."""
+def with_bird_window(image: Image.Image, phase: float) -> Image.Image:
+    """Composite the clean skyline and flying birds only into the window panes."""
 
     left, top, right, bottom = scaled_window_box()
     width, height = right - left, bottom - top
-    overlay = Image.open(HERO / "godzilla-window-charge.webp").convert("RGBA")
-    overlay.alpha_composite(atomic_breath(progress, phase))
+    overlay = Image.open(HERO / "window-city-clean.webp").convert("RGBA")
+    overlay.alpha_composite(flying_birds(phase))
     overlay = overlay.convert("RGB").resize((width, height), Image.Resampling.LANCZOS)
 
     # The crop also contains the window mullion. Mask it out so the original
@@ -129,28 +96,32 @@ def build() -> None:
     # Start the greeting as soon as the README loads. The two generated wave
     # poses share the same room, chair and monitor layout, so direct cuts keep
     # the subject crisp and avoid the yellow flash or cross-fade halo.
-    # Preserve the original greeting frame-for-frame. Only the outdoor window
-    # panes receive the charge -> emerging flame -> full beam sequence. The
-    # final resting hold is split into identical body frames so the fire can
-    # pulse without changing anything else in the image.
-    # Keep the original body-pose timings while adding enough breath states for
-    # a fluid ignition, extension, sustained fire and decay. The longer pose
-    # holds are split into identical body frames, so the wave itself is not
-    # sped up and only the window animation gains extra motion.
-    sequence: list[tuple[Image.Image, float, float, int]] = [
-        (resting, 0.00, 0.0, 80),
-        (wave_a, 0.05, 0.2, 110), (wave_a, 0.12, 0.5, 110), (wave_a, 0.22, 0.8, 110),
-        (wave_b, 0.35, 1.1, 140), (wave_b, 0.50, 1.4, 140),
-        (wave_a, 0.68, 1.7, 140), (wave_a, 0.84, 2.0, 140),
-        (wave_b, 0.96, 2.3, 140), (wave_b, 1.00, 2.6, 140),
-        (wave_a, 0.96, 2.9, 127), (wave_a, 0.91, 3.2, 127), (wave_a, 0.84, 3.5, 126),
-        (resting, 0.66, 3.8, 90), (resting, 0.46, 4.1, 90),
-        (resting, 0.31, 4.4, 120), (resting, 0.18, 4.7, 120),
-        (resting, 0.08, 5.0, 120), (resting, 0.00, 5.3, 120),
-        (resting, 0.00, 0.0, 2040),
+    # Preserve the exact greeting-pose timings while splitting each hold into
+    # short frames so the flock keeps moving throughout the full 4.33 s loop.
+    pose_segments: list[tuple[Image.Image, int]] = [
+        (resting, 80),
+        (wave_a, 330),
+        (wave_b, 280),
+        (wave_a, 280),
+        (wave_b, 280),
+        (wave_a, 380),
+        (resting, 180),
+        (resting, 480),
+        (resting, 2040),
     ]
-    frames = [with_godzilla_window(pose, progress, phase) for pose, progress, phase, _ in sequence]
-    durations = [duration for _, _, _, duration in sequence]
+    total_duration = sum(duration for _, duration in pose_segments)
+    frames: list[Image.Image] = []
+    durations: list[int] = []
+    elapsed = 0
+    for pose, segment_duration in pose_segments:
+        parts = max(1, math.ceil(segment_duration / 160))
+        base_duration, remainder = divmod(segment_duration, parts)
+        for part in range(parts):
+            duration = base_duration + (1 if part < remainder else 0)
+            phase = elapsed / total_duration
+            frames.append(with_bird_window(pose, phase))
+            durations.append(duration)
+            elapsed += duration
 
     frames[0].save(
         OUTPUT,
