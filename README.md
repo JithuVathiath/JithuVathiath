@@ -10,6 +10,10 @@ Interested in **AI/ML engineer, software development engineer and analyst roles*
 
 ![Illustrated research studio in navy and slate blue, with Jithu working at a desk](./assets/hero/jithu-blue-studio.webp)
 
+<p align="center">
+  <img src="./assets/portrait/jithu-ascii-portrait-reveal.webp" width="240" alt="Animated black-and-white ASCII portrait of Jithu Vathiath Biju, revealing from top to bottom" />
+</p>
+
 ## Selected work
 
 ### Human–AI collaboration

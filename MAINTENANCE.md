@@ -19,7 +19,7 @@ Education dates, graduation timing, role interests and the public email were sup
 - Light surface: `#F1F6FC`
 - Dark text: `#142D4E`
 
-Use system sans-serif text, generous whitespace and restrained blue accents. Avoid new typing effects, animated portraits or dense text inside images. The banner is a static 3:1 image; its visualisations are decorative. Evidence graphics must be separately identified and linked to their source.
+Use system sans-serif text, generous whitespace and restrained blue accents. The original animated ASCII portrait appears centred beneath the studio banner at 240 pixels wide, as requested by the owner. Keep its existing monochrome artwork and reveal animation. Avoid additional typing effects or dense text inside images. The banner is a static 3:1 image; its visualisations are decorative. Evidence graphics must be separately identified and linked to their source.
 
 `scripts/apply_blue_palette.py` updates the legacy SVG panels and the telemetry generator. `scripts/apply_retro_palette.py` is a compatibility alias for the blue palette. Legacy source artwork is retained but not embedded in the active README.
 
