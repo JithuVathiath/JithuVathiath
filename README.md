@@ -14,6 +14,8 @@ Interested in **AI/ML engineer, software development engineer and analyst roles*
   <img src="./assets/portrait/jithu-ascii-portrait-reveal.webp" width="240" alt="Animated black-and-white ASCII portrait of Jithu Vathiath Biju, revealing from top to bottom" />
 </p>
 
+![Blue lantern section divider](./assets/dividers/signal-divider.svg)
+
 ## Selected work
 
 ### Human–AI collaboration
@@ -68,6 +70,8 @@ Run the same scenario and seed under different policies, inspect the order book 
 
 </details>
 
+![Blue lantern section divider](./assets/dividers/signal-divider.svg)
+
 ## Skills demonstrated in public work
 
 - **Machine learning:** Python, scikit-learn, CatBoost, calibration and temporal validation — [credit-risk benchmark](https://github.com/JithuVathiath/credit-risk-ml-benchmark).
@@ -76,6 +80,8 @@ Run the same scenario and seed under different policies, inspect the order book 
 - **Data engineering:** SQL, PostgreSQL, Go and data-quality contracts — [settlement forensics](https://github.com/JithuVathiath/sql-market-settlement-forensics).
 - **Delivery & reproducibility:** Docker, GitHub Actions, automated tests and experiment protocols — [benchmark workflow](https://github.com/JithuVathiath/credit-risk-ml-benchmark#reproduce-the-results).
 
+![Blue lantern section divider](./assets/dividers/signal-divider.svg)
+
 ## Current focus
 
 My next research and engineering priorities build on these public systems:
@@ -83,6 +89,8 @@ My next research and engineering priorities build on these public systems:
 - **Market simulation:** build paired experiments for mid-simulation branching and reopening auctions — [documented roadmap](https://github.com/JithuVathiath/market-microstructure-crisis-lab#roadmap).
 - **Financial ML:** produce a vintage-level robustness comparison using the published calibration and drift reports — [current evidence](https://github.com/JithuVathiath/credit-risk-ml-benchmark#results-and-explanations).
 - **AI assurance:** extend the catalogue of evidence-linked stress scenarios for human oversight and approvals — [assurance lab](https://github.com/JithuVathiath/ai-assurance-case-stress-lab).
+
+![Blue lantern section divider](./assets/dividers/signal-divider.svg)
 
 ## Education & publication
 
@@ -94,6 +102,8 @@ Research: human–AI collaboration, responsible AI and lending decisions.
 2021–2025 · CGPA **8.65 / 10**
 
 Co-author, **“Prediction of Cardiac Disease Using Quantum Enhanced Ensemble Learning Approach”**, IEEE ICITIIT 2025. [Read the publication](https://doi.org/10.1109/ICITIIT64777.2025.11041018).
+
+![Blue lantern section divider](./assets/dividers/signal-divider.svg)
 
 ## Let’s connect
 
