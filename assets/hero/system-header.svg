@@ -3,32 +3,32 @@
   <desc id="desc">A warm retro-Japanese profile placard with a JVB monogram crest for Jithu Vathiath Biju, AI researcher and engineer.</desc>
   <defs>
     <pattern id="waves" width="42" height="22" patternUnits="userSpaceOnUse">
-      <path d="M0 22c5-13 16-13 21 0C26 9 37 9 42 22" fill="none" stroke="#A89E8C" stroke-width="1.4" opacity=".34"/>
+      <path d="M0 22c5-13 16-13 21 0C26 9 37 9 42 22" fill="none" stroke="#B4C6DE" stroke-width="1.4" opacity=".34"/>
     </pattern>
     <filter id="crestGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
-    <style>text{font-family:Georgia,'Times New Roman',serif}.crestGlow{animation:breathe 6s ease-in-out infinite}@keyframes breathe{50%{opacity:.3}}@media(prefers-reduced-motion:reduce){.crestGlow{animation:none}}</style>
+    <style>text{font-family:Arial,Helvetica,sans-serif}.crestGlow{animation:breathe 6s ease-in-out infinite}@keyframes breathe{50%{opacity:.3}}@media(prefers-reduced-motion:reduce){.crestGlow{animation:none}}</style>
   </defs>
-  <rect width="1200" height="220" rx="16" fill="#1D1714"/>
-  <rect x="10" y="10" width="1180" height="200" rx="10" fill="none" stroke="#7C756D"/>
-  <rect x="22" y="22" width="1156" height="176" rx="7" fill="none" stroke="#4A3F35"/>
+  <rect width="1200" height="220" rx="16" fill="#0B1629"/>
+  <rect x="10" y="10" width="1180" height="200" rx="10" fill="none" stroke="#8099B9"/>
+  <rect x="22" y="22" width="1156" height="176" rx="7" fill="none" stroke="#353E4A"/>
   <g transform="translate(103 94)">
-    <circle class="crestGlow" r="51" fill="#C46D48" opacity=".18" filter="url(#crestGlow)"/>
-    <circle r="46" fill="#2B241F" stroke="#D8A25E" stroke-width="2"/>
-    <circle r="39" fill="none" stroke="#7C756D" stroke-width="1" stroke-dasharray="2 5"/>
-    <path d="M0-31 27-21v20c0 20-12 31-27 38C-15 30-27 19-27-1v-20Z" fill="#493229" stroke="#D28B66" stroke-width="1.6"/>
-    <path d="M-20 13c8-9 13-9 20 0 7-9 12-9 20 0" fill="none" stroke="#D8A25E" stroke-width="2" opacity=".82"/>
-    <text x="0" y="4" fill="#FFF4E5" font-size="17" font-weight="700" text-anchor="middle" letter-spacing="1">JVB</text>
-    <circle cx="0" cy="-22" r="2.5" fill="#85966D"/>
+    <circle class="crestGlow" r="51" fill="#4DA7DB" opacity=".18" filter="url(#crestGlow)"/>
+    <circle r="46" fill="#14243C" stroke="#6EB6FF" stroke-width="2"/>
+    <circle r="39" fill="none" stroke="#8099B9" stroke-width="1" stroke-dasharray="2 5"/>
+    <path d="M0-31 27-21v20c0 20-12 31-27 38C-15 30-27 19-27-1v-20Z" fill="#293749" stroke="#6C95CC" stroke-width="1.6"/>
+    <path d="M-20 13c8-9 13-9 20 0 7-9 12-9 20 0" fill="none" stroke="#6EB6FF" stroke-width="2" opacity=".82"/>
+    <text x="0" y="4" fill="#ECF1F8" font-size="17" font-weight="700" text-anchor="middle" letter-spacing="1">JVB</text>
+    <circle cx="0" cy="-22" r="2.5" fill="#60B7D1"/>
   </g>
-  <path d="M40 154h126" stroke="#D8A25E" stroke-width="2" opacity=".75"/>
+  <path d="M40 154h126" stroke="#6EB6FF" stroke-width="2" opacity=".75"/>
   <rect x="35" y="158" width="142" height="32" fill="url(#waves)"/>
-  <text x="205" y="58" fill="#D8A25E" font-size="15" letter-spacing="3">RESEARCH PROFILE · ARTIFICIAL INTELLIGENCE &amp; FINANCIAL TECHNOLOGY</text>
-  <text x="205" y="119" fill="#F4EADB" font-size="42" font-weight="700" letter-spacing="2">JITHU VATHIATH BIJU</text>
-  <text x="207" y="157" fill="#D6C9B5" font-size="19" letter-spacing="2">AI RESEARCHER · MACHINE LEARNING · RESEARCH SOFTWARE</text>
+  <text x="205" y="58" fill="#6EB6FF" font-size="15" letter-spacing="3">RESEARCH PROFILE · ARTIFICIAL INTELLIGENCE &amp; FINANCIAL TECHNOLOGY</text>
+  <text x="205" y="119" fill="#F1F6FC" font-size="42" font-weight="700" letter-spacing="2">JITHU VATHIATH BIJU</text>
+  <text x="207" y="157" fill="#CBD9ED" font-size="19" letter-spacing="2">AI RESEARCHER · MACHINE LEARNING · RESEARCH SOFTWARE</text>
   <g transform="translate(915 62)" font-size="13">
-    <path d="M0 0v104" stroke="#5C5146"/>
-    <circle cx="18" cy="11" r="4" fill="#85966D"/><text x="34" y="16" fill="#A89E8C">RESPONSIBLE AI</text>
-    <circle cx="18" cy="49" r="4" fill="#D8A25E"/><text x="34" y="54" fill="#A89E8C">FINANCIAL TECHNOLOGY</text>
-    <circle cx="18" cy="87" r="4" fill="#C46D48"/><text x="34" y="92" fill="#A89E8C">RESEARCH SOFTWARE</text>
+    <path d="M0 0v104" stroke="#345474"/>
+    <circle cx="18" cy="11" r="4" fill="#60B7D1"/><text x="34" y="16" fill="#B4C6DE">RESPONSIBLE AI</text>
+    <circle cx="18" cy="49" r="4" fill="#6EB6FF"/><text x="34" y="54" fill="#B4C6DE">FINANCIAL TECHNOLOGY</text>
+    <circle cx="18" cy="87" r="4" fill="#4DA7DB"/><text x="34" y="92" fill="#B4C6DE">RESEARCH SOFTWARE</text>
   </g>
 </svg>

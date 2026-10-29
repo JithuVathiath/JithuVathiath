@@ -1,165 +1,111 @@
-<div align="center">
+# Jithu Vathiath Biju
 
-![Jithu Vathiath Biju - AI researcher and engineer](./assets/hero/system-header.svg)
+**AI / ML engineering · Software engineering · Financial analytics**
 
-![Jithu turning to greet a visitor in a warm retro-Japanese research studio](./assets/hero/jithu-retro-studio-greeting.webp)
+I’m an AI researcher and engineer building tools to evaluate **human–AI decisions, financial risk and AI assurance**. I turn research questions into tested software, with clear evaluation methods and documented limitations.
 
-<sub><code>RESPONSIBLE AI</code> · <code>MACHINE LEARNING</code> · <code>FINANCIAL TECHNOLOGY</code> · <code>RESEARCH SOFTWARE</code></sub>
+[Selected work](#selected-work) · [Research](#humanai-collaboration) · [LinkedIn](https://in.linkedin.com/in/jithu-v-biju) · [Email](mailto:jithuvathiath@gmail.com)
 
-<br /><br />
+Interested in **AI/ML engineer, software development engineer and analyst roles**, and research collaborations across responsible AI and financial technology.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=E7D7C2&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" />
-  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=4A352A&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" />
-  <img src="https://readme-typing-svg.demolab.com?font=Merriweather&weight=700&size=24&pause=1400&duration=2600&color=4A352A&center=true&vCenter=true&width=900&lines=AI+Researcher;Machine+Learning+Engineer;Responsible+AI+%7C+FinTech+%7C+Research+Software;Human-AI+Collaboration+%7C+Machine+Learning+%7C+Decision+Intelligence" alt="AI Researcher, Machine Learning Engineer, Responsible AI, FinTech and Research Software" />
-</picture>
+![Illustrated research studio in navy and slate blue, with Jithu working at a desk](./assets/hero/jithu-blue-studio.webp)
 
-</div>
+## Selected work
 
-## Professional Profile
+### Human–AI collaboration
 
-<img align="right" width="340" alt="Black-and-white ASCII portrait of Jithu Vathiath Biju revealing from top to bottom" src="./assets/portrait/jithu-ascii-portrait-reveal.webp" />
+**When should people accept or challenge AI advice?** My Warwick research combines decision analysis and human-coded qualitative evidence to examine AI-assisted lending decisions.
 
-I am an AI researcher and engineer working across **Responsible AI, Machine Learning, Financial Technology and Research Software**. My work focuses on developing rigorous, transparent and reproducible systems that connect empirical research with practical engineering.
+Across **22 participants and 2,200 decision rows**, final human–AI accuracy was **66.61%**, compared with **65.42%** for initial human judgement and **60.73%** for the AI recommendation. The **1.19 percentage-point** improvement over initial judgement was small and uncertain.
 
-I am particularly interested in how AI systems support human decision-making, how their limitations can be measured and communicated, and how machine-learning systems can be evaluated responsibly in high-stakes settings.
+[![Accuracy comparison: initial human 65.42%, AI recommendation 60.73%, final human–AI 66.61%](./assets/research/accuracy-comparison.svg)](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis#headline-findings)
 
-My current areas of focus include:
+Of **700 initial disagreements**, **60%** involved appropriate acceptance of correct AI advice or appropriate resistance to incorrect advice. These are experimental sample findings; the public repository shares code and documentation, while participant-level data remain restricted.
 
-- **Responsible AI:** Human oversight, appropriate reliance, fairness, explainability and AI assurance.
-- **Machine Learning:** Model evaluation, temporal validation, calibration, uncertainty estimation and selective prediction.
-- **Financial Technology:** Credit risk, market microstructure, financial data systems and decision support.
-- **Research Software:** Reproducible pipelines, simulation, search systems, interactive research tools and data engineering.
+`Python` `Jupyter` `CatBoost` `SHAP` · [Research & methodology](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis) · [Public reproducibility](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis/blob/main/docs/public_reproducibility.md)
 
-<br clear="right" />
+### SBA credit-risk benchmark
 
-![Section divider](./assets/dividers/signal-divider.svg)
+**Can a model identify five-year charge-off risk on future loan vintages?** I built a reproducible benchmark across **514,825 eligible SBA 7(a) loans**, using time-based partitions, leakage controls and probability calibration.
 
-## Research Focus: Human-AI Collaboration
+CatBoost achieved **0.385 test PR-AUC**, against a **0.040 no-skill baseline**, on the FY2018–FY2020 test cohort. Its test PR-AUC bootstrap interval was **0.376–0.398**. Model selection used validation PR-AUC before the test set was scored; the results concern already-approved loans.
 
-[![Human-AI collaboration research summary](./assets/research/human-ai-decision-intelligence.svg)](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis)
+`Python` `scikit-learn` `CatBoost` `Docker` · [Code & results](https://github.com/JithuVathiath/credit-risk-ml-benchmark) · [Evaluation protocol](https://github.com/JithuVathiath/credit-risk-ml-benchmark/blob/main/docs/evaluation-protocol.md) · [Calibration plots](https://github.com/JithuVathiath/credit-risk-ml-benchmark/blob/main/reports/figures/calibration_curves.png)
 
-My Warwick research examined how people interpret, resist and revise algorithmic recommendations during lending decisions. The study used a three-stage decision process consisting of an independent human judgement, an AI recommendation and a final human decision. Quantitative decision analysis was combined with qualitative evidence to study reliance, accuracy, fairness and human oversight.
+### Market microstructure lab
 
-The public repository distinguishes empirical findings from broader deployment claims. Results are reported within the boundaries of the experimental sample, predictive explanations are separated from causal interpretations, and descriptive group differences are not presented as legal fairness determinations.
+**How do market rules change the impact of a liquidity shock?** I built a browser laboratory with a Rust/WebAssembly exchange core, inspectable trading agents, event replay and paired policy experiments.
 
-**Study Overview:** 22 participants · 2,200 decision rows · 700 initial human-AI disagreements · 60% appropriately resolved disagreements · 66.61% final human-AI accuracy.
+Run the same scenario and seed under different policies, inspect the order book and agent decisions, then export a replay and incident report. The lab uses **synthetic educational simulations**; its outputs describe the model rather than real-market performance.
 
-[Explore the Research Repository →](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis)
+[![Actual Market Microstructure Lab interface showing the simulation, market charts and research controls](./assets/evidence/market-lab.jpg)](https://jithuvathiath.github.io/market-microstructure-crisis-lab/)
 
-![Section divider](./assets/dividers/signal-divider.svg)
+*Actual simulation output: a liquidity shock, its price path and the order book. Launch the lab to inspect the event sequence and compare policies.*
 
-## Technical Expertise
-
-![Technical skills demonstrated across public repositories](./assets/stack/tech-arsenal.svg)
-
-The technologies shown above are drawn from public projects and research repositories where they are used in implemented, documented and testable work.
-
-![Section divider](./assets/dividers/signal-divider.svg)
-
-## Selected Projects
-
-![Selected research and engineering projects](./assets/projects/mission-grid.svg)
-
-### Featured Work
-
-1. **[Human-AI Loan Collaboration Analysis](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis)**  
-   Mixed-methods Responsible AI research examining reliance, accuracy, group outcomes and human oversight in AI-assisted lending decisions. `Python` `Jupyter` `CatBoost` `SHAP`
-
-2. **[SBA 7(a) Credit-Risk ML Benchmark](https://github.com/JithuVathiath/credit-risk-ml-benchmark)**  
-   A leakage-controlled, future-vintage credit-risk benchmark covering 514,825 eligible loans, with calibrated probabilities, drift analysis and explicit decision-cost evaluation. `Python` `scikit-learn` `CatBoost` `Docker`
-
-3. **[Market Microstructure Crisis & Governance Lab](https://github.com/JithuVathiath/market-microstructure-crisis-lab)** · **[Launch Lab](https://jithuvathiath.github.io/market-microstructure-crisis-lab/)**  
-   A deterministic browser-based laboratory for exchange design, heterogeneous trading agents, latency, crisis replay and paired policy experiments. `Rust` `WebAssembly` `TypeScript` `React`
-
-4. **[AI Assurance Case Stress Lab](https://github.com/JithuVathiath/ai-assurance-case-stress-lab)**  
-   Policy-as-code infrastructure that connects assurance claims to evidence, stress-tests approvals under governance shocks, identifies minimal cut sets and records tamper-evident decisions. `TypeScript` `Node.js` `SARIF` `SHA-256`
-
-5. **[SQL Market Settlement Forensics](https://github.com/JithuVathiath/sql-market-settlement-forensics)**  
-   Audit-ready ingestion and warehouse analytics for SEC fails-to-deliver data, with lineage tracking, data-quality contracts and measured access-path experiments. `PostgreSQL` `SQL` `Go` `Docker`
-
-6. **[Strata Search Engine](https://github.com/JithuVathiath/strata-search-engine)**  
-   A dependency-free C++20 retrieval engine featuring compressed positional indexes, BM25 ranking, phrase, prefix and fuzzy search, persistence and reproducible benchmarks. `C++20` `BM25` `BK-tree` `LRU`
+`Rust` `WebAssembly` `TypeScript` `React` · **[Launch the lab →](https://jithuvathiath.github.io/market-microstructure-crisis-lab/)** · [Source & architecture](https://github.com/JithuVathiath/market-microstructure-crisis-lab)
 
 <details>
-<summary><strong>Additional Projects and Research</strong></summary>
-<br />
+<summary><strong>More engineering and research</strong></summary>
 
-- **[Supply Network Resilience Lab](https://github.com/JithuVathiath/supply-network-resilience-lab)** - Swift 6 network-flow and correlated Monte Carlo laboratory for CVaR, N-2 criticality and resilience-investment analysis.
-- **[Quantum-Enhanced Heart Disease Ensemble](https://github.com/JithuVathiath/quantum-heart-disease-ensemble)** - Leakage-safe classical and quantum benchmarking that reports empirical results without overstating quantum advantage.
-- **[Parallel Plant Disease Deep Learning](https://github.com/JithuVathiath/parallel-plant-disease-deep-learning)** - ResNet-18 benchmark with leakage auditing, calibration, selective prediction and measured parallel scaling.
-- **[Aegis Continuous AI Assurance](https://github.com/JithuVathiath/ai-governance-continuous-assurance)** - Evidence-led controls, control-drift replay, SARIF output and a tamper-evident audit ledger.
-- **[Lok Sabha 2024 Electoral Analytics](https://github.com/JithuVathiath/lok-sabha-2024-electoral-analytics)** - Source-pinned electoral analysis with reconciliation, seat-vote indices and responsible interpretation.
-- **[Smart File Organizer](https://github.com/JithuVathiath/smart-file-organizer)** - Safe local automation with dry-run previews, conflict handling and one-command rollback.
+**AI assurance & data systems**
+
+- [AI Assurance Case Stress Lab](https://github.com/JithuVathiath/ai-assurance-case-stress-lab) — Connects assurance claims to evidence and tests approvals under governance shocks. `TypeScript` `Node.js`
+- [Continuous AI Assurance](https://github.com/JithuVathiath/ai-governance-continuous-assurance) — Tracks control drift and records evidence in a tamper-evident audit ledger.
+- [SQL Market Settlement Forensics](https://github.com/JithuVathiath/sql-market-settlement-forensics) — Builds traceable ingestion and warehouse analysis for SEC fails-to-deliver data. `PostgreSQL` `Go`
+- [Strata Search Engine](https://github.com/JithuVathiath/strata-search-engine) — Implements ranked retrieval, positional indexes and reproducible benchmarks. `C++20`
+
+**Simulation & applied machine learning**
+
+- [Supply Network Resilience Lab](https://github.com/JithuVathiath/supply-network-resilience-lab) — Studies network disruption and resilience investment with Monte Carlo simulation. `Swift`
+- [Quantum Heart-Disease Ensemble](https://github.com/JithuVathiath/quantum-heart-disease-ensemble) — Compares classical and quantum methods with leakage controls and explicit limits on advantage claims.
+- [Plant-Disease Deep Learning](https://github.com/JithuVathiath/parallel-plant-disease-deep-learning) — Evaluates ResNet-18 with calibration and measured parallel scaling.
+- [Lok Sabha Electoral Analytics](https://github.com/JithuVathiath/lok-sabha-2024-electoral-analytics) — Reconciles election sources and examines seat–vote relationships.
+- [Smart File Organizer](https://github.com/JithuVathiath/smart-file-organizer) — Automates local organisation with previews, conflict handling and undo.
 
 </details>
 
-![Section divider](./assets/dividers/signal-divider.svg)
+## Skills demonstrated in public work
 
-## Current Research and Development
+- **Machine learning:** Python, scikit-learn, CatBoost, calibration and temporal validation — [credit-risk benchmark](https://github.com/JithuVathiath/credit-risk-ml-benchmark).
+- **AI research:** mixed methods, reliance analysis, uncertainty and SHAP — [human–AI study](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis).
+- **Software engineering:** Rust, WebAssembly, TypeScript and React — [market lab](https://github.com/JithuVathiath/market-microstructure-crisis-lab); C++20 and information retrieval — [Strata](https://github.com/JithuVathiath/strata-search-engine).
+- **Data engineering:** SQL, PostgreSQL, Go and data-quality contracts — [settlement forensics](https://github.com/JithuVathiath/sql-market-settlement-forensics).
+- **Delivery & reproducibility:** Docker, GitHub Actions, automated tests and experiment protocols — [benchmark workflow](https://github.com/JithuVathiath/credit-risk-ml-benchmark#reproduce-the-results).
 
-| Status | Area | Approach |
-|:--|:--|:--|
-| `ACTIVE` | Responsible AI, human oversight and decision intelligence | Evidence-led evaluation |
-| `ACTIVE` | Financial ML, market infrastructure and risk systems | Temporal validation and stress testing |
-| `BUILDING` | Interactive research software and reproducible data products | End-to-end testability |
-| `EXPLORING` | RAG and LLM evaluation, provenance and retrieval quality | Traceable evidence and systematic evaluation |
+## Current focus
 
-Repository history, released experiments and documented results provide the record of ongoing work.
+My next research and engineering priorities build on these public systems:
 
-## Education
+- **Market simulation:** build paired experiments for mid-simulation branching and reopening auctions — [documented roadmap](https://github.com/JithuVathiath/market-microstructure-crisis-lab#roadmap).
+- **Financial ML:** produce a vintage-level robustness comparison using the published calibration and drift reports — [current evidence](https://github.com/JithuVathiath/credit-risk-ml-benchmark#results-and-explanations).
+- **AI assurance:** extend the catalogue of evidence-linked stress scenarios for human oversight and approvals — [assurance lab](https://github.com/JithuVathiath/ai-assurance-case-stress-lab).
 
-```text
-SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
-└─ B.Tech · Computer Science and Engineering
-   └─ CGPA 8.65 / 10
+## Education & publication
 
-WARWICK BUSINESS SCHOOL
-└─ MSc Financial Technology
-   └─ Research: Human-AI Collaboration · Responsible AI · Lending Decisions
-```
+**Warwick Business School — MSc Financial Technology**<br />
+2025–2026 · Graduation scheduled for **January 2027**<br />
+Research: human–AI collaboration, responsible AI and lending decisions.
 
-## Research and Professional Highlights
+**SRM Institute of Science and Technology — B.Tech, Computer Science and Engineering**<br />
+2021–2025 · CGPA **8.65 / 10**
 
-- Co-authored **“Prediction of Cardiac Disease Using Quantum Enhanced Ensemble Learning Approach”**, published at IEEE ICITIIT 2025 - [DOI 10.1109/ICITIIT64777.2025.11041018](https://doi.org/10.1109/ICITIIT64777.2025.11041018).
-- Developed public repositories that document model limitations, data boundaries, evaluation methods and reproducibility alongside reported results.
-- Built projects spanning empirical AI research, compiled systems, interactive laboratories, policy-as-code, SQL data platforms and tested command-line software.
+Co-author, **“Prediction of Cardiac Disease Using Quantum Enhanced Ensemble Learning Approach”**, IEEE ICITIIT 2025. [Read the publication](https://doi.org/10.1109/ICITIIT64777.2025.11041018).
 
-![Section divider](./assets/dividers/signal-divider.svg)
+## Let’s connect
 
-## GitHub Activity
+For AI/ML engineering, software development, analyst opportunities or research collaboration: **[jithuvathiath@gmail.com](mailto:jithuvathiath@gmail.com)** · [LinkedIn](https://in.linkedin.com/in/jithu-v-biju) · [All repositories](https://github.com/JithuVathiath?tab=repositories).
 
-![Public GitHub repository statistics](./assets/telemetry/system-telemetry.svg)
+<details>
+<summary>GitHub activity & a little personality</summary>
 
-Repository statistics are generated from the public GitHub API through a scheduled workflow, without relying on third-party streak services or external statistics providers.
+![Public GitHub repository statistics with their last update date](./assets/telemetry/system-telemetry.svg)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JithuVathiath/JithuVathiath/output/pacman-contribution-graph-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JithuVathiath/JithuVathiath/output/pacman-contribution-graph.svg" />
-  <img alt="Pac-Man animation playing through Jithu Vathiath Biju's GitHub contribution graph" src="https://raw.githubusercontent.com/JithuVathiath/JithuVathiath/output/pacman-contribution-graph.svg" />
+  <img alt="Pac-Man animation based on public GitHub contributions" src="https://raw.githubusercontent.com/JithuVathiath/JithuVathiath/output/pacman-contribution-graph.svg" />
 </picture>
 
-The Pac-Man visualization is regenerated from public contribution data every day. Contribution intensity determines the pellets and power pellets, while GitHub's native contribution history remains the primary activity record.
+Repository statistics refresh weekly; the contribution animation refreshes daily. [GitHub’s native contribution history](https://github.com/JithuVathiath) is the primary activity record. [Instagram](https://www.instagram.com/jithu_v_18/).
 
-![Section divider](./assets/dividers/signal-divider.svg)
-
-## Contact and Links
-
-<img align="right" width="150" alt="Warm retro portrait of Jithu Vathiath Biju" src="./assets/portrait/jithu-retro-avatar.webp" />
-
-- **GitHub:** [github.com/JithuVathiath](https://github.com/JithuVathiath)
-- **LinkedIn:** [linkedin.com/in/jithu-v-biju](https://in.linkedin.com/in/jithu-v-biju)
-- **Instagram:** [@jithu_v_18](https://www.instagram.com/jithu_v_18/)
-- **Repositories:** [Explore All Public Work](https://github.com/JithuVathiath?tab=repositories)
-- **Research:** [Human-AI Lending Collaboration](https://github.com/JithuVathiath/human-ai-loan-collaboration-analysis)
-- **Publication:** [IEEE ICITIIT 2025 Paper](https://doi.org/10.1109/ICITIIT64777.2025.11041018)
-
-<br clear="right" />
-
-<div align="center">
-
-![Jithu Vathiath Biju research and engineering portfolio](./assets/footer/transmission.svg)
-
-<sub>Research, engineering and portfolio work by Jithu Vathiath Biju.</sub>
-
-</div>
+</details>
