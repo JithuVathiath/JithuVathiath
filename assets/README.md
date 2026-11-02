@@ -2,7 +2,17 @@
 
 ## Studio banner
 
-`hero/jithu-blue-studio.webp` is a static 3:1 illustration generated with the built-in image-generation tool on 29 October 2026, using `hero/jithu-retro-studio.webp` as the edit target. The final image was converted to WebP without cropping or altering its content. Monitor graphics are decorative, not research evidence.
+`hero/jithu-blue-studio-greeting.webp` is the active 3:1 animated banner. It uses the original greeting's 4.33-second pose sequence: working at the monitors, turning to greet the viewer, waving twice and returning to work. `scripts/build_blue_hero.py` assembles the saved blue keyframes. Monitor graphics are decorative, not research evidence.
+
+`hero/jithu-blue-studio.webp` is the resting frame generated with the built-in image-generation tool on 29 October 2026, using `hero/jithu-retro-studio.webp` as the edit target. The two greeting keyframes, `hero/jithu-blue-studio-wave-a.webp` and `hero/jithu-blue-studio-wave-b.webp`, were generated with the same built-in tool on 2 November 2026. The blue resting frame was the edit target; the original warm greeting supplied the face and pose reference. Encoding and animation assembly use Pillow.
+
+Greeting frame A prompt:
+
+> Use case: precise-object-edit. Asset type: animation keyframe for a professional GitHub profile banner. Image 1 is the edit target: preserve its exact panoramic 3:1 composition, camera, room, furniture, chair, plants, monitor graphics, lighting and navy-blue palette. Image 2 is ONLY a reference for the same man's face and greeting pose, not room or palette. Change only the man in Image 1: he turns his head and shoulders naturally toward the viewer, smiling slightly, raising his right hand beside his face with palm facing viewer and fingers upright in a friendly wave, matching the greeting action of Image 2. Preserve identity, glasses, curly hair, beard, navy clothing and original scale/location in right half. His raised hand must be anatomically natural with five fingers. Chair stays exactly where it is. Full single frame, not a collage. No text, borders, zoom or layout changes.
+
+Greeting frame B prompt:
+
+> Use case: precise-object-edit. This is animation keyframe B from keyframe A supplied. Preserve the entire image pixel-aligned: same camera, panoramic 3:1 crop, room, monitors, graphics, lighting, chair, blue jacket, man's head and friendly expression. Change ONLY his raised right hand and wrist: tilt the palm about 18 degrees outward toward image left, with fingers naturally moving with the hand, as the second position of a friendly side-to-side wave. Keep the elbow, upper arm, head and torso in exactly their previous places. Maintain natural five fingers and anatomy. Do not change anything else. No text or collage.
 
 Final generation prompt:
 
@@ -10,7 +20,7 @@ Final generation prompt:
 
 ## ASCII portrait
 
-`portrait/jithu-ascii-portrait-reveal.webp` is the original monochrome animated ASCII portrait, restored to the redesigned README at the owner's request. It is displayed at 240 pixels wide beneath the blue studio banner. The existing artwork and animation are unchanged.
+`portrait/jithu-ascii-portrait-reveal.webp` is the original monochrome animated ASCII portrait, restored to the redesigned README at the owner's request. It is displayed at up to 240 pixels wide beside the About Me description, using a GitHub-compatible table beneath the blue studio banner. The existing artwork and animation are unchanged.
 
 ## Section dividers
 
